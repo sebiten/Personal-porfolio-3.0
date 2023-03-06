@@ -1,3 +1,4 @@
+import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
 import Head from "next/head";
 
@@ -12,7 +13,9 @@ export default function Home() {
       </Head>
       <main>
         <NavBar/>
+        <Hero/>
       </main>
     </>
   );
 }
+{/* <div className="bg-gradient-to-r from-teal-400 to-blue-500 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rotate-45 z-0"></div> */}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +15,7 @@ function Navbar() {
   const menuClasses = isMenuOpen ? "flex" : "hidden";
 
   return (
-    <nav className="bg-black py-4 opacity-95 sticky z-40 top-0 w-full main-content">
+    <nav className="bg-gray-800 py-4 opacity-100 sticky z-40 top-0 w-full main-content">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <motion.div
@@ -25,9 +26,9 @@ function Navbar() {
             <Link href="/" className="font-bold text-white text-xl">
               <Image
                 className="flex items-center justify-center mx-auto mb-10"
-                src="/gg.png"
+                src="/logo.svg"
                 alt="Logo"
-                width={100}
+                width={50}
                 height={100}
               />
             </Link>
@@ -97,9 +98,13 @@ function Navbar() {
                 href="https://wa.me/38755555555"
                 className="block text-white text-sm font-medium"
               >
-                +38755 555555
+                <FaWhatsapp color="lightgreen"></FaWhatsapp>
               </Link>
-              <FaWhatsapp color="lightgreen"></FaWhatsapp>
+            </div>
+            <div className="flex items-center justify-center hover:bg-blue-500 px-3  rounded-md ">
+              <Link href="mailto:sebdevspace@gmail.com">
+                <AiOutlineMail color="lightgreen"  />
+              </Link>
             </div>
           </div>
         </div>
