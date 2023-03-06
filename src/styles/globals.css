@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: poppins, sans-serif;
+  background-color: rgb(31 41 55)
+}

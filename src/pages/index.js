@@ -1,5 +1,8 @@
+import AboutMe from "@/components/AboutMe";
 import Hero from "@/components/Hero";
 import NavBar from "@/components/NavBar";
+import ProjectsSection from "@/components/Projects";
+import Technologies from "@/components/Technologies";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,8 +17,10 @@ export default function Home() {
       <main>
         <NavBar/>
         <Hero/>
+        <AboutMe/>
+        <ProjectsSection/>
+        <Technologies/>
       </main>
     </>
   );
 }
-{/* <div className="bg-gradient-to-r from-teal-400 to-blue-500 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rotate-45 z-0"></div> */}
