@@ -15,7 +15,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/01-tec.png"
+                src="/01-tec.webp"
                 alt="React"
               />
             </div>
@@ -24,7 +24,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/02-tec.png"
+                src="/02-tec.webp"
                 alt="Node.js"
               />
             </div>
@@ -33,7 +33,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/03-tec.png"
+                src="/03-tec.webp"
                 alt="Tailwind CSS"
               />
             </div>
@@ -42,7 +42,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/05-tec.png"
+                src="/05-tec.webp"
                 alt="JavaScript"
               />
             </div>
@@ -60,7 +60,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/tailwind.png"
+                src="/tailwind.webp"
                 alt="HTML"
               />
             </div>
@@ -78,7 +78,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/04-tec.png"
+                src="/04-tec.webp"
                 alt="HTML"
               />
             </div>
@@ -87,7 +87,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/mongodb.png"
+                src="/mongodb.webp"
                 alt="CSS"
               />
             </div>
@@ -96,7 +96,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/postman.png"
+                src="/postman.webp"
                 alt="CSS"
               />
             </div>
@@ -105,7 +105,7 @@ function Technologies() {
                 width={100}
                 height={100}
                 className="max-h-24"
-                src="/vscode.png"
+                src="/prisma.svg"
                 alt="CSS"
               />
             </div>

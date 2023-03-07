@@ -7,25 +7,25 @@ const projects = [
     title: "Kiosko",
     description:
       "Full stack application for a kiosko with a Next js, Prisma backend and MongoDB.",
-    image: "/kiosko.png",
+    image: "/kiosko.webp",
     url: "https://kiosko.up.railway.app/",
   },
   {
     title: "Cinema",
     description: "Movie application with Next Js, Tailwind CSS and TMDB API",
-    image: "/jp.png",
+    image: "/jp.webp",
     url: "https://earnest-pithivier-e91468.netlify.app/",
   },
   {
     title: "Lyriks",
     description: "Music player with React, Redux, Tailwind CSS and Spotify API",
-    image: "/lyriks.png",
+    image: "/lyriks.webp",
     url: "https://lyriks-musicplayer.netlify.app/",
   },
   {
     title: "Arnoa SRL",
     description: "Arnoa SRL website with Next Js, Tailwind CSS and Sanity CMS",
-    image: "/arnoa.png",
+    image: "/arnoa.webp",
     url: "https://lyriks-musicplayer.netlify.app/",
   },
 ];
