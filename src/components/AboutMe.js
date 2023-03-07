@@ -34,14 +34,14 @@ const AboutMe = () => {
         interests will take me in the future.
       </p>
       <motion.a
-        href="/ruta/a/tu/cv"
+        href="https://drive.google.com/file/d/1Lmhje7JcUTIgETcmu20xYkKCOsUIWOM9/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-300 text-gray-800 rounded-full py-3 px-6 font-semibold text-lg shadow-md hover:bg-green-400"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
       >
-        Descarga mi CV
+        Dowload CV
       </motion.a>
     </div>
     
