@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <section
     id="about"
-    className="flex flex-col md:flex-row justify-center items-center h-screen">
+    className="flex flex-col md:flex-row justify-center items-center h-screen px-2">
     <div className="bg-gray-800 p-2 mb-8 w-full max-w-7xl md:mx-4">
       <motion.div
         className="flex justify-center items-center mb-8"
@@ -14,7 +14,7 @@ const AboutMe = () => {
         <motion.img
           src="/me.jpg"
           alt="Profile Picture"
-          className="rounded-full w-48 h-48 border-4 border-green-300 shadow-md"
+          className="rounded-full w-52 bg-cover object-cover h-52 border-4 border-green-300 shadow-md"
           whileHover={{ scale: 1.2 }}
           transition={{ duration: 0.3 }}
         />
