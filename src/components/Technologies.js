@@ -4,8 +4,8 @@ import React from "react";
 function Technologies() {
   return (
     <div>
-      <div className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+      <div className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 ">
+        <div className="max-w-7xl mx-auto shadow-xl p-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Technologies & Tools
           </h2>

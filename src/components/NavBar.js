@@ -72,24 +72,25 @@ function Navbar() {
                   href="/"
                   className="block text-white hover:bg-blue-500  px-3  rounded-md text-sm font-medium"
                 >
-                  Inicio
+                  
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href={"/nosotros"}
+                  href="#about"
                   className="block text-white hover:bg-blue-500 px-3 rounded-md text-sm font-medium"
                 >
-                  Nosotros
+                  About me
                 </Link>
               </li>
               <li></li>
               <li>
                 <Link
-                  href="#contacto"
+                  href="#contact"
                   className="block text-white hover:bg-blue-500 px-3  rounded-md text-sm font-medium"
                 >
-                  Contacto
+                  Contact
                 </Link>
               </li>
             </motion.ul>

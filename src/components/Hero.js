@@ -1,19 +1,19 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaLinkedinIn,
+  FaWhatsapp,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 
 function Hero() {
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      // Actualiza el estado de la animación cada 10 segundos
-    }, 10000);
-
-    return () => clearInterval(intervalId);
-  }, []);
-
   return (
     <section className="bg-gray-800 min-h-screen w-full flex justify-center items-center relative">
-      <div className="text-center z-10">
+      <div className="text-center z-10 xl:mb-40 sm:mt-16">
         <motion.div
           style={{
             display: "flex",
@@ -29,27 +29,46 @@ function Hero() {
               stiffness: 100,
             }}
           >
-            <Image src="/logo.svg" alt="logo" width={200} height={100} />
+            <Image src="/logo.svg" alt="logo" width={250} height={100} />
           </motion.div>
         </motion.div>
-        <h1 className="text-5xl font-bold text-white mb-4">Sebastian Burgos</h1>
+        <h1 className="text-4xl font-bold text-white mb-4">Sebastian Burgos</h1>
         <p className="text-2xl text-gray-400 mb-8">Front end Developer</p>
-        <a
-          href="#"
-          className="bg-white text-gray-800 px-8 py-4 rounded-full transition-all duration-300 hover:bg-gray-800 hover:text-white font-bold text-lg shadow-xl hover:shadow-none"
-        >
-          Contact me
-        </a>
+        <div className="flex gap-x-8 justify-center cursor-pointer">
+          <Link
+            className="grayscale hover:grayscale-0 hover:scale-110"
+            href="https://api.whatsapp.com/send?phone=573003000000&text=Hola%20Sebastian%20Burgos%20me%20gustaria%20saber%20mas%20de%20ti"
+          >
+            {" "}
+            <FaWhatsapp className="text-4xl text-green-500 " />
+          </Link>
+
+          <Link
+            className="grayscale hover:grayscale-0 hover:scale-110"
+            href="https://www.linkedin.com/in/sebdevspace/"
+          >
+            {" "}
+            <FaLinkedin className="text-4xl text-blue-500 " />
+          </Link>
+
+          <Link
+            className="grayscale hover:grayscale-0 hover:scale-110"
+            href="https://github.com/sebiten"
+          >
+            {" "}
+            <FaGithub className="text-4xl text-gray-500 hover:text-white " />
+          </Link>
+        </div>
       </div>
       <div className="absolute w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <svg
           viewBox="0 0 200 100"
           xmlns="http://www.w3.org/2000/svg"
-          className="stroke-current text-gray-700 w-full h-full"
+          className="stroke-current text-green-200 w-full h-full"
         >
           <motion.path
             d="M 100,0 L 200,100 L 100,200 L 0,100 L 100,0"
-            strokeWidth=".5"
+            strokeWidth="0.1"
             fill="none"
             strokeDasharray="630"
             strokeDashoffset="630"
@@ -60,13 +79,13 @@ function Hero() {
       </div>
       <div className="absolute w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
         <svg
-          viewBox="0 0 200 100"
+          viewBox="0 0 200 92"
           xmlns="http://www.w3.org/2000/svg"
-          className="stroke-current text-gray-700 w-full h-full -rotate-180"
+          className="stroke-current text-green-100 w-full h-full -rotate-180"
         >
           <motion.path
             d="M 100,0 L 200,100 L 100,200 L 0,100 L 100,0"
-            strokeWidth="0.2"
+            strokeWidth="0.1"
             fill="none"
             strokeDasharray="630"
             strokeDashoffset="630"

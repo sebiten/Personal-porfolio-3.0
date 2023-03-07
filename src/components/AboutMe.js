@@ -2,8 +2,10 @@ import { motion } from "framer-motion";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-center items-center my-24">
-    <div className="bg-gray-800 p-8 shadow-lg mb-8 w-full max-w-7xl md:mx-4">
+    <section
+    id="about"
+    className="flex flex-col md:flex-row justify-center items-center h-screen">
+    <div className="bg-gray-800 p-2 mb-8 w-full max-w-7xl md:mx-4">
       <motion.div
         className="flex justify-center items-center mb-8"
         whileHover={{ scale: 1.1, rotate: 5 }}
@@ -12,7 +14,7 @@ const AboutMe = () => {
         <motion.img
           src="/me.jpg"
           alt="Profile Picture"
-          className="rounded-full w-48 h-48 border-4 border-blue-700 shadow-md"
+          className="rounded-full w-48 h-48 border-4 border-green-300 shadow-md"
           whileHover={{ scale: 1.2 }}
           transition={{ duration: 0.3 }}
         />
@@ -35,14 +37,15 @@ const AboutMe = () => {
         href="/ruta/a/tu/cv"
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-blue-700 text-gray-100 rounded-full py-3 px-6 font-semibold text-lg shadow-md hover:bg-blue-800"
+        className="bg-green-300 text-gray-800 rounded-full py-3 px-6 font-semibold text-lg shadow-md hover:bg-green-400"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
       >
         Descarga mi CV
       </motion.a>
     </div>
-  </div>
+    
+  </section>
   );
 };
 
