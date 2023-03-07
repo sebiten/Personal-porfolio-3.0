@@ -72,7 +72,6 @@ function Navbar() {
                   href="/"
                   className="block text-white hover:bg-blue-500  px-3  rounded-md text-sm font-medium"
                 >
-                  
                   Home
                 </Link>
               </li>
@@ -96,15 +95,15 @@ function Navbar() {
             </motion.ul>
             <div className="flex items-center justify-center hover:bg-blue-500 px-3  rounded-md ">
               <Link
-                href="https://wa.me/38755555555"
+                href="https://wa.me/+543886575936"
                 className="block text-white text-sm font-medium"
               >
-                <FaWhatsapp color="lightgreen"></FaWhatsapp>
+                <FaWhatsapp size={20} color="lightgreen"></FaWhatsapp>
               </Link>
             </div>
             <div className="flex items-center justify-center hover:bg-blue-500 px-3  rounded-md ">
               <Link href="mailto:sebdevspace@gmail.com">
-                <AiOutlineMail color="lightgreen"  />
+                <AiOutlineMail size={20} color="lightgreen" />
               </Link>
             </div>
           </div>

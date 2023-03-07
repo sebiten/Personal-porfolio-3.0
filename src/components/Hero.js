@@ -37,7 +37,7 @@ function Hero() {
         <div className="flex gap-x-8 justify-center cursor-pointer">
           <Link
             className="grayscale hover:grayscale-0 hover:scale-110"
-            href="https://api.whatsapp.com/send?phone=573003000000&text=Hola%20Sebastian%20Burgos%20me%20gustaria%20saber%20mas%20de%20ti"
+            href="https://api.whatsapp.com/send?phone=+543886575936&text=Hola%20Sebastian%20Burgos%20me%20gustaria%20saber%20mas%20de%20ti"
           >
             {" "}
             <FaWhatsapp className="text-4xl text-green-500 " />

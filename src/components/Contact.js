@@ -73,10 +73,10 @@ function Contact() {
                 </p>
                 <p>
                   <span className="font-bold">Mail: </span>
-                  <a href="mailto:sebdevspace@gmail.com">
+                  <Link href="mailto:sebdevspace@gmail.com">
                     {" "}
                     {show ? info.email : "**********"}
-                  </a>
+                  </Link>
                 </p>
                 <p>
                   <span className="font-bold">Direction: </span>{" "}
@@ -85,13 +85,13 @@ function Contact() {
 
                 <button className="bg-green-200 hover:bg-green-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
                   <FaMailBulk className="mr-2" color="#25D366" size={25} />
-                  <Link href="mailto:ventas@arnoa.com">
+                  <Link href="mailto:sebdevspace@gmail.com">
                     Contact me by email
                   </Link>
                 </button>
                 <button className="bg-green-200 hover:bg-green-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center justify-center">
                   <FaWhatsapp className="mr-2" color="#25D366" size={25} />
-                  <Link href="https://wa.me/38755555555">
+                  <Link href="https://wa.me/+543886575936">
                     Contact me by Whatsapp
                   </Link>
                 </button>
