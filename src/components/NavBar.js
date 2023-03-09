@@ -64,7 +64,7 @@ function Navbar() {
             <motion.ul
               initial={{ opacity: 0 }} // initial state
               animate={{ opacity: 1 }} // final state
-              transition={{ duration: 2 }} // transition duration
+              transition={{ duration: 1 }} // transition duration
               className={`${menuClasses} text-center md:flex  mt-2 md:mt-0`}
             >
               <li>

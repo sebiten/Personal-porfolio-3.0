@@ -13,7 +13,12 @@ import {
 function Hero() {
   return (
     <section className="bg-gray-800 min-h-screen w-full flex justify-center items-center relative">
-      <div className="text-center z-10 xl:mb-40 sm:mt-16">
+      <motion.div
+        initial={{ opacity: 0 }} // initial state
+        animate={{ opacity: 1 }} // final state
+        transition={{ duration: 1 }} // transition duration
+        className="text-center z-10 xl:mb-40 sm:mt-16"
+      >
         <motion.div
           style={{
             display: "flex",
@@ -34,10 +39,10 @@ function Hero() {
         </motion.div>
         <h1 className="text-4xl font-bold text-white mb-4">Sebastian Burgos</h1>
         <p className="text-2xl text-gray-400 mb-8">Front end Developer</p>
-        <div className="flex gap-x-8 justify-center cursor-pointer">
+        <motion.div className="flex gap-x-4 justify-center cursor-pointer">
           <Link
             className="grayscale hover:grayscale-0 hover:scale-110"
-            href="https://api.whatsapp.com/send?phone=543886575936&text=Hola%20Sebastian%20Burgos%20me%20gustaria%20saber%20mas%20de%20ti"
+            href="https://api.whatsapp.com/send?phone=+543886575936&text=Hola%20Sebastian%20Burgos%20me%20gustaria%20saber%20mas%20de%20ti"
           >
             {" "}
             <FaWhatsapp className="text-4xl text-green-500 " />
@@ -58,8 +63,8 @@ function Hero() {
             {" "}
             <FaGithub className="text-4xl text-gray-500 hover:text-white " />
           </Link>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <div className="absolute w-full h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <svg
           viewBox="0 0 200 100"

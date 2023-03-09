@@ -43,8 +43,8 @@ function Contact() {
               <Image
                 src="/logo.svg"
                 alt="Contacto"
-                layout="fill"
-                objectFit="cover"
+                width={500}
+                height={300}
               />
               <div className="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
