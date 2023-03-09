@@ -31,21 +31,10 @@ function Contact() {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
             Get in touch
           </h2>
-          <div>
-            <p className="text-gray-300 text-lg sm:hidden">
-              Interested in working together? Please dont hesitate to contact me
-              for a quote Im open to any project ideas and would love to discuss
-              how we can bring your vision to life.
-            </p>
-          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative rounded-lg overflow-hidden sm:block">
-              <Image
-                src="/logo.svg"
-                alt="Contacto"
-                width={500}
-                height={300}
-              />
+              <Image src="/logo.svg" alt="Contacto" width={500} height={300} />
               <div className="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
                 <h3 className="text-xl md:text-xl font-normal">
