@@ -27,8 +27,8 @@ function Contact() {
         className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
         id="contact"
       >
-        <div className="max-w-7xl mx-auto sm:px-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 mb-4">
+        <div className="max-w-7xl mx-auto sm:px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 my-4">
             Get in touch
           </h2>
 

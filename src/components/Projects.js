@@ -32,9 +32,15 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section className="max-w-7xl  mx-auto bg-gray-800 pb-20 shadow-xl">
+    <section className="max-w-7xl mx-auto bg-gray-800 pb-20 shadow-xl">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl text-white font-bold mb-8">Some projects</h2>
+        <p className="text-gray-400 text-lg mb-12">
+          Here are some of my recent projects that showcase my skills and
+          experience in web development. Each project represents a unique
+          challenge that I was able to overcome with creativity and attention to
+          detail. Take a look and see what I can do for you!
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((project, index) => (
             <Link

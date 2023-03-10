@@ -6,7 +6,7 @@ const AboutMe = () => {
       id="about"
       className="flex flex-col md:flex-row justify-center items-center h-screen px-2"
     >
-      <div className="bg-gray-800 p-2 mb-8 w-full max-w-7xl md:mx-4">
+      <div className="bg-gray-800 p-2  w-full max-w-7xl md:mx-4">
         <motion.div
           className="flex justify-center items-center mb-8"
           whileHover={{ scale: 1.1, rotate: 5 }}

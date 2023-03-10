@@ -9,12 +9,20 @@ function Technologies() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
             Technologies & Tools
           </h2>
-          <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-10">
-            <div className="col-span-1 flex justify-center flex-col items-center py-8 px-8 bg-white shadow-md rounded-lg">
+          <p className="mt-3  text-lg leading-6 text-gray-300">
+            I use modern and efficient technologies to create high-quality and
+            professional websites and applications. I am constantly learning and
+            staying up-to-date with the latest tools and techniques to provide
+            the best solutions for my clients. Here are some of the technologies
+            and tools I use:
+          </p>
+
+          <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-3 lg:mt-10 shadow-xl">
+            <div className="col-span-1 flex justify-center flex-col items-center py-8 px-8 bg-white shadow- rounded-lg">
               <Image
                 width={100}
                 height={100}
-                className="max-h-24"
+                className="max-h-24 "
                 src="/01-tec.webp"
                 alt="React"
               />
