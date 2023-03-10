@@ -62,7 +62,7 @@ const Services = () => {
             Services
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Below are some of the services I offer. Please don't hesitate to get
+            Below are some of the services I offer. Please dont hesitate to get
             in touch with me if you have any questions or a project that I can
             assist with!
           </p>
