@@ -26,7 +26,7 @@ const projects = [
     title: "Arnoa SRL",
     description: "Arnoa SRL website with Next Js, Tailwind CSS and Sanity CMS",
     image: "/arnoa.webp",
-    url: "https://lyriks-musicplayer.netlify.app/",
+    url: "https://voluble-faun-a86bf8.netlify.app/",
   },
 ];
 
