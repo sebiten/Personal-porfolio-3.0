@@ -1,7 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaMailBulk, FaWhatsapp } from "react-icons/fa";
+import { AiFillMail } from "react-icons/ai";
+import { SiGmail } from "react-icons/si";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaMailBulk,
+  FaMailchimp,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 function Contact() {
   const [info, setInfo] = React.useState({
@@ -51,7 +60,7 @@ function Contact() {
               </h3>
               <button
                 onClick={handleInfo}
-                className="bg-green-200 font-bold hover:bg-green-300 text-gray-800 rounded-lg p-2 my-4"
+                className="bg-green-200 font-bold hover:bg-gray-300  text-gray-800 rounded-lg p-2 my-4"
               >
                 {show ? "Hide" : "Show information"}
               </button>
@@ -72,18 +81,59 @@ function Contact() {
                   {show ? info.direction : "**********"}
                 </p>
 
-                <button className="bg-green-200 hover:bg-green-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
+                <button className="bg-green-200 hover:bg-gray-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
                   <FaMailBulk className="mr-2" color="#25D366" size={25} />
                   <Link href="mailto:sebdevspace@gmail.com">
                     Contact me by email
                   </Link>
                 </button>
-                <button className="bg-green-200 hover:bg-green-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center justify-center">
+                <button className="bg-green-200 hover:bg-gray-300  hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center justify-center">
                   <FaWhatsapp className="mr-2" color="#25D366" size={25} />
                   <Link href="https://wa.me/+543886575936">
                     Contact me by Whatsapp
                   </Link>
                 </button>
+                <div className="flex gap-10 items-center justify-center">
+                  <div className="grid grid-cols-4 gap-4 mt-8">
+                    <Link
+                      className="hover:scale-110 transition duration-300 ease-in-out"
+                      target="blank"
+                      href="https://www.linkedin.com/in/sebdevspace/"
+                    >
+                      <div className="bg-[#0077B5] rounded-lg p-2">
+                        <FaLinkedin color="white" size={50} />
+                      </div>
+                    </Link>
+                    <Link
+                      className="hover:scale-110 transition duration-300 ease-in-out"
+                      target="blank"
+                      href="mailto:sebdevspace@gmail.com"
+                    >
+                      <div className="bg-[#D44638] rounded-lg p-2">
+                        <SiGmail color="white" size={50} />
+                      </div>
+                    </Link>
+                    <Link
+                      className="hover:scale-110 transition duration-300 ease-in-out"
+                      target="blank"
+                      href="https://github.com/sebiten"
+                    >
+                      <div className="bg-[#333] rounded-lg p-2">
+                        <FaGithub color="white" size={50} />
+                      </div>
+                    </Link>
+
+                    <Link
+                      className="hover:scale-110 transition duration-300 ease-in-out"
+                      target="blank"
+                      href="https://twitter.com/SebitenB"
+                    >
+                      <div className="bg-[#1DA1F2] rounded-lg p-2">
+                        <FaTwitter color="white" size={50} />
+                      </div>
+                    </Link>
+                  </div>
+                </div>
               </div>
             </form>
           </div>

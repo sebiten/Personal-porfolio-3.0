@@ -38,7 +38,7 @@ const AboutMe = () => {
           href="https://drive.google.com/file/d/1Lmhje7JcUTIgETcmu20xYkKCOsUIWOM9/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-green-300 text-gray-800 rounded-full py-3 px-6 font-semibold text-lg shadow-md hover:bg-green-400"
+          className="bg-green-300 text-gray-800 rounded-full py-3 px-6 font-semibold text-lg shadow-md hover:bg-gray-300 "
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
         >

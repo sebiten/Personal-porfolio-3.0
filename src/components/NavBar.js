@@ -70,7 +70,7 @@ function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className="block text-white hover:bg-blue-500  px-3  rounded-md text-sm font-medium"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800  px-3  rounded-md text-sm font-medium"
                 >
                   Home
                 </Link>
@@ -78,7 +78,7 @@ function Navbar() {
               <li>
                 <Link
                   href="#about"
-                  className="block text-white hover:bg-blue-500 px-3 rounded-md text-sm font-medium"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3 rounded-md text-sm font-medium"
                 >
                   About me
                 </Link>
@@ -87,13 +87,13 @@ function Navbar() {
               <li>
                 <Link
                   href="#contact"
-                  className="block text-white hover:bg-blue-500 px-3  rounded-md text-sm font-medium"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium"
                 >
                   Contact
                 </Link>
               </li>
             </motion.ul>
-            <div className="flex items-center justify-center hover:bg-blue-500 px-3  rounded-md ">
+            <div className="flex items-center justify-center  hover:text-gray-800 px-3  rounded-md ">
               <Link
                 href="https://wa.me/+543886575936"
                 className="block text-white text-sm font-medium"
@@ -101,7 +101,7 @@ function Navbar() {
                 <FaWhatsapp size={20} color="lightgreen"></FaWhatsapp>
               </Link>
             </div>
-            <div className="flex items-center justify-center hover:bg-blue-500 px-3  rounded-md ">
+            <div className="flex items-center justify-center  hover:text-gray-800 px-3  rounded-md ">
               <Link href="mailto:sebdevspace@gmail.com">
                 <AiOutlineMail size={20} color="lightgreen" />
               </Link>
