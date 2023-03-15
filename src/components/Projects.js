@@ -4,17 +4,17 @@ import React from "react";
 
 const projects = [
   {
+    title: "Arnoa SRL",
+    description: "Arnoa SRL website with Next Js, Tailwind CSS and Sanity CMS",
+    image: "/arnoa.webp",
+    url: "https://voluble-faun-a86bf8.netlify.app/",
+  },
+  {
     title: "Kiosko",
     description:
       "Full stack application for a kiosko with a Next js, Prisma backend and MongoDB.",
     image: "/kiosko.webp",
     url: "https://kiosko.up.railway.app/",
-  },
-  {
-    title: "Cinema",
-    description: "Movie application with Next Js, Tailwind CSS and TMDB API",
-    image: "/jp.webp",
-    url: "https://earnest-pithivier-e91468.netlify.app/",
   },
   {
     title: "Lyriks",
@@ -23,11 +23,27 @@ const projects = [
     url: "https://lyriks-musicplayer.netlify.app/",
   },
   {
-    title: "Arnoa SRL",
-    description: "Arnoa SRL website with Next Js, Tailwind CSS and Sanity CMS",
-    image: "/arnoa.webp",
-    url: "https://voluble-faun-a86bf8.netlify.app/",
+    title: "Foodbud",
+    description: "Foodbud app with Next Js, Tailwind CSS",
+    image: "/foodbud.png",
+    url: "https://dancing-sherbet-b9a756.netlify.app/",
   },
+  {
+    title: "Movie App",
+    description: "Movie app with Next Js, Tailwind CSS and TMDB API",
+    image: "/jp.webp",
+    url: "https://movieapp-eta.vercel.app/",
+  },
+  {
+    title: "Dog App",
+    description: "Dog app with Next Js, Tailwind CSS and Dog API",
+    image: "/dog.png",
+    url: "https://doghubs.netlify.app/",
+  },
+  
+
+  
+  
 ];
 
 const ProjectsSection = () => {
@@ -41,7 +57,7 @@ const ProjectsSection = () => {
           challenge that I was able to overcome with creativity and attention to
           detail. Take a look and see what I can do for you!
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <Link
               target={"_blank"}

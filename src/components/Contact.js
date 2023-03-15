@@ -37,13 +37,19 @@ function Contact() {
         id="contact"
       >
         <div className="max-w-7xl mx-auto sm:px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-100 my-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-gray-100 my-4">
             Get in touch
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative rounded-lg overflow-hidden sm:block">
-              <Image src="/logo.svg" alt="Contacto" width={500} height={300} />
+              <Image
+                className="object-cover bg-center w-full h-full"
+                src="/logo.svg"
+                alt="Contacto"
+                width={500}
+                height={300}
+              />
               <div className="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
                 <h3 className="text-xl md:text-xl font-normal">
@@ -94,13 +100,13 @@ function Contact() {
                   </Link>
                 </button>
                 <div className="flex gap-10 items-center justify-center">
-                  <div className="grid grid-cols-4 gap-4 mt-8">
+                  <div className="grid grid-cols-4 md:grid-cols-4 gap-4 mt-8">
                     <Link
                       className="hover:scale-110 transition duration-300 ease-in-out"
                       target="blank"
                       href="https://www.linkedin.com/in/sebdevspace/"
                     >
-                      <div className="bg-[#0077B5] rounded-lg p-2">
+                      <div className="bg-[#0077B5] sm:bg-transparent w-auto rounded-lg p-2">
                         <FaLinkedin color="white" size={50} />
                       </div>
                     </Link>
@@ -109,7 +115,7 @@ function Contact() {
                       target="blank"
                       href="mailto:sebdevspace@gmail.com"
                     >
-                      <div className="bg-[#D44638] rounded-lg p-2">
+                      <div className="bg-[#D44638] md:bg-transparent  rounded-lg p-2">
                         <SiGmail color="white" size={50} />
                       </div>
                     </Link>
@@ -118,7 +124,7 @@ function Contact() {
                       target="blank"
                       href="https://github.com/sebiten"
                     >
-                      <div className="bg-[#333] rounded-lg p-2">
+                      <div className="bg-[#333] md:bg-transparent  rounded-lg p-2">
                         <FaGithub color="white" size={50} />
                       </div>
                     </Link>
@@ -128,7 +134,7 @@ function Contact() {
                       target="blank"
                       href="https://twitter.com/SebitenB"
                     >
-                      <div className="bg-[#1DA1F2] rounded-lg p-2">
+                      <div className="bg-[#1DA1F2]  md:bg-transparent  rounded-lg p-2">
                         <FaTwitter color="white" size={50} />
                       </div>
                     </Link>
