@@ -32,7 +32,7 @@ const projects = [
     title: "Movie App",
     description: "Movie app with Next Js, Tailwind CSS and TMDB API",
     image: "/jp.webp",
-    url: "https://movieapp-eta.vercel.app/",
+    url: "https://earnest-pithivier-e91468.netlify.app",
   },
   {
     title: "Dog App",
