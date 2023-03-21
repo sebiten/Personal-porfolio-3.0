@@ -83,7 +83,7 @@ function Contact() {
                   </Link>
                 </p>
                 <p>
-                  <span className="font-bold">Direction: </span>{" "}
+                  <span className="font-bold">Adress: </span>{" "}
                   {show ? info.direction : "**********"}
                 </p>
 
