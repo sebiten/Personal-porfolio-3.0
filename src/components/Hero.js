@@ -34,7 +34,9 @@ function Hero() {
               stiffness: 100,
             }}
           >
-            <Image src="/logo.svg" alt="logo" width={250} height={100} />
+            <Image
+              className="my-6"
+            src="/logo.svg" alt="logo" width={250} height={100} />
           </motion.div>
         </motion.div>
         <h1 className="text-4xl font-bold text-white mb-4">Sebastian Burgos</h1>
