@@ -37,7 +37,7 @@ const projects = [
   {
     title: "Boost Digitals",
     description: "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
-    image: "/boost portada.png",
+    image: "/boost.png",
     url: "https://thunderous-buttercream-736fd9.netlify.app",
   },
 ];
