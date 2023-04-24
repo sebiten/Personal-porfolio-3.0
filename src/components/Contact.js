@@ -11,7 +11,7 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-
+import { motion } from "framer-motion";
 function Contact() {
   const [info, setInfo] = React.useState({
     phone: "**********",
@@ -33,19 +33,24 @@ function Contact() {
   return (
     <>
       <section
-        className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+        className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 scroll-smooth"
         id="contact"
       >
-        <div className="max-w-7xl mx-auto sm:px-4">
+        <motion.div
+          initial={{ opacity: 0 }}
+          transition={{ duration: 1.3 }}
+          whileInView={{ opacity: 1.5 }}
+          className="max-w-7xl mx-auto sm:px-4"
+        >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-100 my-4">
             Get in touch
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative rounded-lg overflow-hidden sm:block">
+            <div className="relative overflow-hidden sm:block">
               <Image
-                className="object-cover bg-center w-full h-full"
-                src="/logo.svg"
+                className=" w-full h-full"
+                src="/logohead.svg"
                 alt="Contacto"
                 width={500}
                 height={300}
@@ -143,7 +148,7 @@ function Contact() {
               </div>
             </form>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

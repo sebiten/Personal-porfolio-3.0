@@ -15,9 +15,9 @@ function Navbar() {
   const menuClasses = isMenuOpen ? "flex" : "hidden";
 
   return (
-    <nav className="bg-gray-800 py-4 opacity-100 sticky z-40 top-0 w-full main-content">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-gray-800 py-4 opacity-100 sticky z-40 top-0 w-full main-content scroll-smooth">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 scroll-smooth">
+        <div className="flex justify-between items-center h-16  scroll-smooth">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 1 }}
@@ -70,7 +70,7 @@ function Navbar() {
               <li>
                 <Link
                   href="/"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800  px-3  rounded-md text-sm font-medium"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800  px-3  rounded-md text-sm font-medium scroll-smooth"
                 >
                   Home
                 </Link>
@@ -78,7 +78,7 @@ function Navbar() {
               <li>
                 <Link
                   href="#about"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3 rounded-md text-sm font-medium"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3 rounded-md text-sm font-medium scroll-smooth"
                 >
                   About me
                 </Link>
@@ -87,7 +87,7 @@ function Navbar() {
               <li>
                 <Link
                   href="#contact"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium scroll-smooth"
                 >
                   Contact
                 </Link>

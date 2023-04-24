@@ -7,7 +7,7 @@ import {
   faCodeBranch,
   faPalette,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { motion } from "framer-motion";
 const services = [
   {
     icon: faCode,
@@ -56,7 +56,12 @@ const services = [
 const Services = () => {
   return (
     <section className="bg-gray-800 py-20 max-w-7xl mx-auto">
-      <div className="px-4 sm:px-6 lg:px-8">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.3 }}
+        whileInView={{ opacity: 1.5 }}
+        className="px-4 sm:px-6 lg:px-8"
+      >
         <div>
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
             Services
@@ -95,7 +100,7 @@ const Services = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

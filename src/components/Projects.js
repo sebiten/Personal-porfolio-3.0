@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+import { motion } from "framer-motion";
 const projects = [
   {
     title: "Arnoa SRL",
-    description: "Arnoa SRL website with Next Js, Tailwind CSS and Sanity CMS",
+    description: "Arnoa SRL website with Next Js, Tailwind CSS and Framer motion",
     image: "/arnoa.webp",
     url: "https://voluble-faun-a86bf8.netlify.app/",
   },
@@ -35,21 +35,22 @@ const projects = [
     url: "https://earnest-pithivier-e91468.netlify.app",
   },
   {
-    title: "Dog App",
-    description: "Dog app with Next Js, Tailwind CSS and Dog API",
-    image: "/dog.png",
-    url: "https://doghubs.netlify.app/",
+    title: "Boost Digitals",
+    description: "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
+    image: "/boost portada.png",
+    url: "https://thunderous-buttercream-736fd9.netlify.app",
   },
-  
-
-  
-  
 ];
 
 const ProjectsSection = () => {
   return (
     <section className="max-w-7xl mx-auto bg-gray-800 pb-20 shadow-xl">
-      <div className="container mx-auto px-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        transition={{ duration: 1.3 }}
+        whileInView={{ opacity: 1.5 }}
+        className="container mx-auto px-4"
+      >
         <h2 className="text-4xl text-white font-bold mb-8">Some projects</h2>
         <p className="text-gray-400 text-lg mb-12">
           Here are some of my recent projects that showcase my skills and
@@ -79,7 +80,7 @@ const ProjectsSection = () => {
             </Link>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
