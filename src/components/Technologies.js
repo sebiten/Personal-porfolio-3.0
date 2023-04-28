@@ -2,9 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { images } from "../data/TechImg";
+import { useTranslate } from "@/hooks/useTranslate";
 
 function Technologies() {
-  console.log(images);
+  const { language } = useTranslate();
+
   return (
     <div>
       <motion.div
@@ -15,14 +17,14 @@ function Technologies() {
       >
         <div className="max-w-7xl mx-auto shadow-xl p-4">
           <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-            Technologies & Tools
+            {language === "es"
+              ? "Tecnologias y herramientas"
+              : " Technologies & Tools"}
           </h2>
           <p className="mt-3  text-lg leading-6 text-gray-300">
-            I use modern and efficient technologies to create high-quality and
-            professional websites and applications. I am constantly learning and
-            staying up-to-date with the latest tools and techniques to provide
-            the best solutions for my clients. Here are some of the technologies
-            and tools I use:
+            {language === "es"
+              ? "Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad y profesionales. Estoy constantemente aprendiendo y manteniéndome actualizado con las últimas herramientas y técnicas para ofrecer las mejores soluciones a mis clientes. A continuación se presentan algunas de las tecnologías y herramientas que utilizo"
+              : "I use modern and efficient technologies to create high-quality and professional websites and applications. I am constantly learning and staying up-to-date with the latest tools and techniques to provide the best solutions for my clients. Here are some of the technologies and tools I use:"}
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-3 lg:mt-10 shadow-xl">

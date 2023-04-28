@@ -8,6 +8,7 @@ import {
   faPalette,
 } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { useTranslate } from "@/hooks/useTranslate";
 const services = [
   {
     icon: faCode,
@@ -54,6 +55,8 @@ const services = [
 ];
 
 const Services = () => {
+  const { language } = useTranslate();
+
   return (
     <section className="bg-gray-800 py-20 max-w-7xl mx-auto">
       <motion.div
@@ -64,12 +67,12 @@ const Services = () => {
       >
         <div>
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            Services
+            {language === "es" ? "Servicios" : "Services"}
           </h2>
           <p className="mt-4 text-lg text-gray-400">
-            Below are some of the services I offer. Please dont hesitate to get
-            in touch with me if you have any questions or a project that I can
-            assist with!
+            {language === "es"
+              ? "A continuación se encuentran algunos de los servicios que ofrezco. ¡No dudes en contactarme si tienes alguna pregunta o un proyecto en el que pueda ayudarte!"
+              : "Below are some of the services I offer. Please dont hesitate to get in touch with me if you have any questions or a project that I can  assist with!"}
           </p>
         </div>
         <div className="mt-16">

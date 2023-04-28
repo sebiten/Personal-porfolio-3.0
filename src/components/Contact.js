@@ -12,7 +12,10 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslate } from "@/hooks/useTranslate";
 function Contact() {
+  const { language } = useTranslate();
+
   const [info, setInfo] = React.useState({
     phone: "**********",
     email: "**********",
@@ -43,7 +46,7 @@ function Contact() {
           className="max-w-7xl mx-auto sm:px-4"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-100 my-4">
-            Get in touch
+            {language === "es" ? "Contacto" : "Get in touch"}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -58,16 +61,18 @@ function Contact() {
               <div className="absolute inset-0 bg-gray-900 bg-opacity-90"></div>
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-6">
                 <h3 className="text-xl md:text-xl font-normal">
-                  Interested in working together? Please dont hesitate to
-                  contact me for a quote Im open to any project ideas and would
-                  love to discuss how we can bring your vision to life.
+                  {language === "es"
+                    ? "¿Estás interesado en trabajar juntos? Por favor, no dudes en contactarme para solicitar un presupuesto. Estoy abierto a cualquier idea de proyecto y me encantaría discutir cómo podemos hacer realidad tu visión."
+                    : " Interested in working together? Please dont hesitate to contact me for a quote Im open to any project ideas and would  love to discuss how we can bring  your vision to life."}
                 </h3>
               </div>
             </div>
 
             <form className="bg-gray-700 text-white rounded-lg shadow-xl p-10 flex flex-col justify-center">
               <h3 className="font-bold text-center text-3xl">
-                Contact information
+                {language === "es"
+                  ? "Informacion de contacto"
+                  : "Contact information"}
               </h3>
               <button
                 onClick={handleInfo}

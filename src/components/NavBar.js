@@ -120,7 +120,7 @@ function Navbar() {
                 }`}
                 onClick={toggleLanguage}
               >
-                {language === "es" ? "EN" : "ES"}
+                {language === "es" ? "ES" : "EN"}
               </button>
             </div>
           </div>

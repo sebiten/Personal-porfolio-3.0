@@ -2,10 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslate } from "@/hooks/useTranslate";
 const projects = [
   {
     title: "Arnoa SRL",
-    description: "Arnoa SRL website with Next Js, Tailwind CSS and Framer motion",
+    description:
+      "Arnoa SRL website with Next Js, Tailwind CSS and Framer motion",
     image: "/arnoa.webp",
     url: "https://voluble-faun-a86bf8.netlify.app/",
   },
@@ -36,13 +38,15 @@ const projects = [
   },
   {
     title: "Boost Digitals",
-    description: "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
+    description:
+      "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
     image: "/boost.png",
     url: "https://thunderous-buttercream-736fd9.netlify.app",
   },
 ];
 
 const ProjectsSection = () => {
+  const { language } = useTranslate();
   return (
     <section className="max-w-7xl mx-auto bg-gray-800 pb-20 shadow-xl">
       <motion.div
@@ -53,10 +57,12 @@ const ProjectsSection = () => {
       >
         <h2 className="text-4xl text-white font-bold mb-8">Some projects</h2>
         <p className="text-gray-400 text-lg mb-12">
-          Here are some of my recent projects that showcase my skills and
-          experience in web development. Each project represents a unique
-          challenge that I was able to overcome with creativity and attention to
-          detail. Take a look and see what I can do for you!
+          {language === "es"
+            ? "Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!"
+            : "Here are some of my recent projects that showcase my skills and experience in web development. Each project represents a unique challenge that I was able to overcome with creativity and attention to detail. Take a look and see what I can do for you!"}
+
+          {/*
+           */}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
