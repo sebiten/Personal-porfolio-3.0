@@ -7,12 +7,18 @@ import { AiOutlineMail } from "react-icons/ai";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isclicked, setIsclicked] = useState(false);
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleClick = () => {
+    setIsclicked(!isclicked);
+  };
+
   const menuClasses = isMenuOpen ? "flex" : "hidden";
+  const darkmode = false
 
   return (
     <nav className="bg-gray-800 py-4 opacity-100 sticky z-40 top-0 w-full main-content scroll-smooth">
@@ -105,6 +111,11 @@ function Navbar() {
               <Link href="mailto:sebdevspace@gmail.com">
                 <AiOutlineMail size={20} color="lightgreen" />
               </Link>
+            </div>
+            <div>
+              <button
+              className={`text-white uppercase font-bold ${darkmode ? "bg-gray-50" : "bg-gray-800"}`}
+              onClick={handleClick}>{isclicked ? "🇪🇸" : "🇺🇸"}</button>
             </div>
           </div>
         </div>

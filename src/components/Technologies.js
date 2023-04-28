@@ -1,7 +1,10 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { images } from "../data/TechImg";
+
 function Technologies() {
+  console.log(images);
   return (
     <div>
       <motion.div
@@ -23,114 +26,20 @@ function Technologies() {
           </p>
 
           <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-3 lg:mt-10 shadow-xl">
-            <div className="col-span-1 flex justify-center flex-col items-center py-8 px-8 bg-white shadow- rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24 "
-                src="/01-tec.webp"
-                alt="React"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/02-tec.webp"
-                alt="Node.js"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/03-tec.webp"
-                alt="Tailwind CSS"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/05-tec.webp"
-                alt="JavaScript"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/next.svg"
-                alt="HTML"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/tailwind.webp"
-                alt="HTML"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/npm.webp"
-                alt="HTML"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/04-tec.webp"
-                alt="HTML"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/mongodb.webp"
-                alt="CSS"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/postman.webp"
-                alt="CSS"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/prisma.svg"
-                alt="CSS"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center py-8 px-8 bg-white shadow-md rounded-lg">
-              <Image
-                width={100}
-                height={100}
-                className="max-h-24"
-                src="/styled.webp"
-                alt="CSS"
-              />
-            </div>
+            {images.map((image) => (
+              <div
+                key={image.id}
+                className="col-span-1 flex justify-center flex-col items-center py-8 px-8 bg-white shadow-md rounded-lg"
+              >
+                <Image
+                  width={100}
+                  height={100}
+                  className="max-h-24"
+                  src={image.src}
+                  alt={image.alt}
+                />
+              </div>
+            ))}
           </div>
         </div>
       </motion.div>
