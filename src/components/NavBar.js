@@ -4,21 +4,22 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
+import { useTranslate } from "@/hooks/useTranslate";
 
 function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isclicked, setIsclicked] = useState(false);
+  const { language, setLanguage, isMenuOpen, setIsMenuOpen, toggleLanguage } =
+    useTranslate();
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   const handleClick = () => {
-    setIsclicked(!isclicked);
+    setLanguage(!language);
   };
 
   const menuClasses = isMenuOpen ? "flex" : "hidden";
-  const darkmode = false
+  const darkmode = false;
 
   return (
     <nav className="bg-gray-800 py-4 opacity-100 sticky z-40 top-0 w-full main-content scroll-smooth">
@@ -114,8 +115,13 @@ function Navbar() {
             </div>
             <div>
               <button
-              className={`text-white uppercase font-bold ${darkmode ? "bg-gray-50" : "bg-gray-800"}`}
-              onClick={handleClick}>{isclicked ? "🇪🇸" : "🇺🇸"}</button>
+                className={`text-white uppercase font-bold ${
+                  darkmode ? "bg-gray-50" : "bg-gray-800"
+                }`}
+                onClick={toggleLanguage}
+              >
+                {language === "es" ? "EN" : "ES"}
+              </button>
             </div>
           </div>
         </div>
