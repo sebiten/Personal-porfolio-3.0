@@ -28,7 +28,7 @@ const AboutMe = () => {
           />
         </motion.div>
         <h2 className="text-3xl font-bold text-gray-100 mb-4">
-          Hi, nice to meet you!
+          {language === "es" ? "Sobre mi" : "About me"}
         </h2>
         <p className="text-gray-400 text-lg mb-8">
           {/* . */}
@@ -44,7 +44,7 @@ const AboutMe = () => {
           whileHover={{ scale: 1.1 }}
           transition={{ duration: 0.3 }}
         >
-          Dowload CV
+         {language === 'es' ? "Descargar CV" : "Download CV"}
         </motion.a>
       </motion.div>
     </section>

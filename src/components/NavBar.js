@@ -79,7 +79,7 @@ function Navbar() {
                   href="/"
                   className="block text-white hover:bg-gray-300 hover:text-gray-800  px-3  rounded-md text-sm font-medium scroll-smooth"
                 >
-                  Home
+                  {language === "es" ? "Inicio" : "Home"}
                 </Link>
               </li>
               <li>
@@ -87,7 +87,8 @@ function Navbar() {
                   href="#about"
                   className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3 rounded-md text-sm font-medium scroll-smooth"
                 >
-                  About me
+                                    {language === "es" ? "Sobre mi" : "About me"}
+
                 </Link>
               </li>
               <li></li>
@@ -96,7 +97,8 @@ function Navbar() {
                   href="#contact"
                   className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium scroll-smooth"
                 >
-                  Contact
+                                   {language === "es" ? "Contacto" : "Contact"}
+
                 </Link>
               </li>
             </motion.ul>

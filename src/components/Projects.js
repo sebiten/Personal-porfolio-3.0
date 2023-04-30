@@ -55,7 +55,7 @@ const ProjectsSection = () => {
         whileInView={{ opacity: 1.5 }}
         className="container mx-auto px-4"
       >
-        <h2 className="text-4xl text-white font-bold mb-8">Some projects</h2>
+        <h2 className="text-4xl text-white font-bold mb-8">{language === 'es' ? "Proyectos" : "Projects"}</h2>
         <p className="text-gray-400 text-lg mb-12">
           {language === "es"
             ? "Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!"
