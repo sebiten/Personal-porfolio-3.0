@@ -1,11 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#808080" />
-      <stop offset="50%" stop-color="#34D399"/>
-      <stop offset="100%" stop-color="#60A5FA"/>
-    </linearGradient>
-  </defs>
-  <rect width="100%" height="100%" rx="16" fill="url(#gradient)"/>
-  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#1F2937" font-size="60" font-family="Poppins, sans-serif" font-weight="bold">S<span style="color:#F87171;">.</span>B</text>
+  <polygon points="64,4 120,64 64,124 8,64" fill="none" stroke="#85eaaa" stroke-width="1"/>
+  <text x="50%" y="53%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="55" font-family="Poppins, sans-serif" font-weight="bold">S<span style="color:#808080;">.</span>B</text>
 </svg>
