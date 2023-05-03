@@ -26,7 +26,6 @@ function Technologies() {
               ? "Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad y profesionales. Estoy constantemente aprendiendo y manteniéndome actualizado con las últimas herramientas y técnicas para ofrecer las mejores soluciones a mis clientes. A continuación se presentan algunas de las tecnologías y herramientas que utilizo"
               : "I use modern and efficient technologies to create high-quality and professional websites and applications. I am constantly learning and staying up-to-date with the latest tools and techniques to provide the best solutions for my clients. Here are some of the technologies and tools I use:"}
           </p>
-
           <div className="mt-8 grid grid-cols-2 gap-6 md:grid-cols-3 lg:mt-10 shadow-xl">
             {images.map((image) => (
               <div

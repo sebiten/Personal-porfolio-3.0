@@ -116,14 +116,16 @@ function Navbar() {
               </Link>
             </div>
             <div>
-              <button
-                className={`text-white uppercase font-bold ${
-                  darkmode ? "bg-gray-50" : "bg-gray-800"
-                }`}
-                onClick={toggleLanguage}
-              >
-                {language === "es" ? "ES" : "EN"}
-              </button>
+            <button
+  className={`text-white font-bold py-1 px-2 rounded-md transition ease-in-out duration-300 ${language === "es" ? "bg-green-300" : "bg-gray-800"} w-full sm:w-auto border border-transparent hover:border-white`}
+  onClick={toggleLanguage}
+>
+  {language === "es" ? "ESPAÑOL" : "ENGLISH"}
+</button>
+
+
+
+
             </div>
           </div>
         </div>
