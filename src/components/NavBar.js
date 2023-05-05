@@ -87,8 +87,7 @@ function Navbar() {
                   href="#about"
                   className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3 rounded-md text-sm font-medium scroll-smooth"
                 >
-                                    {language === "es" ? "Sobre mi" : "About me"}
-
+                  {language === "es" ? "Sobre mi" : "About me"}
                 </Link>
               </li>
               <li></li>
@@ -97,8 +96,7 @@ function Navbar() {
                   href="#contact"
                   className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium scroll-smooth"
                 >
-                                   {language === "es" ? "Contacto" : "Contact"}
-
+                  {language === "es" ? "Contacto" : "Contact"}
                 </Link>
               </li>
             </motion.ul>
@@ -116,16 +114,14 @@ function Navbar() {
               </Link>
             </div>
             <div>
-            <button
-  className={`text-white font-bold py-1 px-2 rounded-md transition ease-in-out duration-300 ${language === "es" ? "bg-green-300" : "bg-gray-800"} w-full sm:w-auto border border-transparent hover:border-white`}
-  onClick={toggleLanguage}
->
-  {language === "es" ? "ESPAÑOL" : "ENGLISH"}
-</button>
-
-
-
-
+              <button
+                className={`text-white font-bold py-1 px-2 rounded-md transition ease-in-out duration-300 ${
+                  language === "es" ? "bg-green-300" : "bg-gray-800"
+                } w-full sm:w-auto border border-transparent hover:border-white`}
+                onClick={toggleLanguage}
+              >
+                {language === "es" ? "ESPAÑOL" : "ENGLISH"}
+              </button>
             </div>
           </div>
         </div>

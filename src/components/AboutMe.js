@@ -37,7 +37,7 @@ const AboutMe = () => {
             : "My name is Sebastian Burgos and I am a 24-year-old programmer who is passionate about technology. I love all kinds of challenges and always seek to learn new skills and techniques to improve my work. One of my strengths as a programmer is my ability to learn quickly. I am motivated by the prospect of personal growth and always look for ways to improve myself, both professionally and personally. I believe that this mindset of constant improvement is essential for achieving success in any field, and I am excited to see where my skills and interests will take me in the future"}
         </p>
         <motion.a
-          href="https://drive.google.com/file/d/1trcv9yzTTuUgIdkxIEw-ffO280RbpmnA/view?usp=sharing"
+          href="https://drive.google.com/file/d/11PnlPHlZfzoh2Xgb1qZdXz33N_bhrJxi/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-300 text-gray-800 rounded-full py-3 px-6 font-semibold text-lg shadow-md hover:bg-gray-300 "
