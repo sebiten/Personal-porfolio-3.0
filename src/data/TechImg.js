@@ -22,7 +22,7 @@ export const images = [
   {
     id: 5,
     src: "/next.svg",
-    alt: "HTML",
+    alt: "Nextjs",
   },
   {
     id: 6,
@@ -42,21 +42,21 @@ export const images = [
   {
     id: 9,
     src: "/mongodb.webp",
-    alt: "CSS",
+    alt: "mongodb",
   },
   {
     id: 10,
     src: "/postman.webp",
-    alt: "CSS",
+    alt: "postman",
   },
   {
     id: 11,
-    src: "/prisma.svg",
-    alt: "CSS",
+    src: "/expressjs.png",
+    alt: "express.js",
   },
   {
     id: 12,
     src: "/styled.webp",
-    alt: "CSS",
+    alt: "styled components",
   },
 ];

@@ -40,7 +40,7 @@ function Hero() {
           </motion.div>
         </motion.div>
         <h1 className="text-4xl font-bold text-white mb-4">Sebastian Burgos</h1>
-        <p className="text-2xl text-gray-400 mb-8">Front end Developer</p>
+        <p className="text-2xl text-gray-400 mb-8">Web developer</p>
         <motion.div className="flex gap-x-4 justify-center cursor-pointer">
           <Link
             className="grayscale hover:grayscale-0 hover:scale-110"
