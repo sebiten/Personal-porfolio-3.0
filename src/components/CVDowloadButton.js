@@ -1,26 +1,21 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 const CVDownloadButton = ({ language, toggleLanguage }) => {
   const getDownloadInfo = () => {
-    if (language === 'es') {
+    if (language === "es") {
       return {
-        url: 'https://drive.google.com/file/d/11n029HpALAom2oAKmaV8h7SmVQC6q1DO/view?usp=sharing',
-        text: 'Descargar CV',
+        url: "https://drive.google.com/file/d/11n029HpALAom2oAKmaV8h7SmVQC6q1DO/view?usp=sharing",
+        text: "Descargar CV",
       };
     } else {
       return {
-        url: 'https://drive.google.com/file/d/11PnlPHlZfzoh2Xgb1qZdXz33N_bhrJxi/view?usp=sharing',
-        text: 'Download CV',
+        url: "https://drive.google.com/file/d/11PnlPHlZfzoh2Xgb1qZdXz33N_bhrJxi/view?usp=sharing",
+        text: "Download CV",
       };
     }
   };
 
   const { url, text } = getDownloadInfo();
-
-  // const handleLanguageChange = () => {
-  //   toggleLanguage();
-  // };
-
   return (
     <motion.a
       href={url}
