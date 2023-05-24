@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 import { useTranslate } from "@/hooks/useTranslate";
 const projects = [
   {
-    title: "Arnoa SRL",
+    title: "Techlines E-commerce",
     description:
-      "Arnoa SRL website with Next Js, Tailwind CSS and Framer motion",
-    image: "/arnoa.webp",
-    url: "https://voluble-faun-a86bf8.netlify.app/",
+      "MERN Stack ecommerce with React, Chakra ui, MongoDB and Express",
+    image: "/techlines.webp",
+    url: "https://techlines-s1bl.onrender.com",
   },
   {
     title: "Kiosko",
