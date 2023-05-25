@@ -9,7 +9,7 @@ const projects = [
     description:
       "MERN Stack ecommerce with React, Chakra ui, MongoDB and Express",
     image: "/techlines.webp",
-    url: "https://techlines-s1bl.onrender.com",
+    url: "https://techlines-production.up.railway.app/",
   },
   {
     title: "Kiosko",
