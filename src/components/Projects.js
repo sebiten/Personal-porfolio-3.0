@@ -80,7 +80,7 @@ const ProjectsSection = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-4">{project.title}</h3>
+                <h3 className="text-green-400 text-2xl font-bold mb-4">{project.title}</h3>
                 <p className="text-gray-700 text-base">{project.description}</p>
               </div>
             </Link>
