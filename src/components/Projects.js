@@ -25,10 +25,10 @@ const projects = [
     url: "https://lyriks-musicplayer.netlify.app/",
   },
   {
-    title: "Foodbud",
-    description: "Foodbud app with Next Js, Tailwind CSS",
-    image: "/foodbud.png",
-    url: "https://dancing-sherbet-b9a756.netlify.app/",
+    title: "AbelardoBlog",
+    description: "Blog website with Next js 13, Typescript and Tailwind css",
+    image: "/abelardo-website.png",
+    url: "https://abelardo.blog/",
   },
   {
     title: "Movie App",

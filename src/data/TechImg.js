@@ -31,8 +31,8 @@ export const images = [
   },
   {
     id: 7,
-    src: "/npm.webp",
-    alt: "HTML",
+    src: "/ts.png",
+    alt: "Typescript",
   },
   {
     id: 8,
