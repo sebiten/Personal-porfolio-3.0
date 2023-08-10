@@ -12,9 +12,9 @@ export const services = [
     title: "Front-End Development",
     titleEs: "Desarrollo Front-End",
     description:
-      "Development of modern and responsive user interfaces using the latest web technologies such as HTML5, CSS3, and JavaScript.",
+      "Development of modern and responsive user interfaces using the latest web technologies such as Next js 13, Tailwindcss, JavaScript and Typescript.",
     descriptionEs:
-      "Desarrollo de interfaces de usuario modernas y responsivas utilizando las últimas tecnologías web como HTML5, CSS3 y JavaScript.",
+      "Desarrollo de interfaces de usuario modernas y responsivas utilizando las últimas tecnologías web como Next js 13, Tailwindcss, JavaScript y Typescript.",
   },
   {
     icon: faMobileAlt,
@@ -48,13 +48,13 @@ export const services = [
   },
   {
     icon: faPencilAlt,
-    color: "text-red-500",
-    title: "Wireframing",
-    titleEs: "Creación de Wireframes",
+    color: "texto-rojo-500",
+    title: "Integration of Content and Advanced Functionalities",
+    titleEs: "Integración de Contenido y Funcionalidades Avanzadas",
     description:
-      "Wireframing: Creation of visual outlines and low-fidelity mockups to plan and refine the structure and layout of a website or application",
+      "Integration of Content and Advanced Functionalities: Incorporation of high-level content and features into a website or application to enhance its utility and performance.",
     descriptionEs:
-      "Creación de esquemas visuales y maquetas de baja fidelidad para planificar y refinar la estructura y el diseño de un sitio web o aplicación.",
+      "Integración de Contenido y Funcionalidades Avanzadas: Incorporación de contenido y características de alto nivel en un sitio web o aplicación para mejorar su utilidad y rendimiento.",
   },
   {
     icon: faCode,

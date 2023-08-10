@@ -30,19 +30,19 @@ const projects = [
     image: "/abelardo-website.png",
     url: "https://abelardo.blog/",
   },
-  {
-    title: "Movie App",
-    description: "Movie app with Next Js, Tailwind CSS and TMDB API",
-    image: "/jp.webp",
-    url: "https://earnest-pithivier-e91468.netlify.app",
-  },
-  {
-    title: "Boost Digitals",
-    description:
-      "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
-    image: "/boost.png",
-    url: "https://boostdigitals.netlify.app",
-  },
+  // {
+  //   title: "Movie App",
+  //   description: "Movie app with Next Js, Tailwind CSS and TMDB API",
+  //   image: "/jp.webp",
+  //   url: "https://earnest-pithivier-e91468.netlify.app",
+  // },
+  // {
+  //   title: "Boost Digitals",
+  //   description:
+  //     "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
+  //   image: "/boost.png",
+  //   url: "https://boostdigitals.netlify.app",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -55,7 +55,9 @@ const ProjectsSection = () => {
         whileInView={{ opacity: 1.5 }}
         className="container mx-auto px-4"
       >
-        <h2 className="text-4xl text-white font-bold mb-8">{language === 'es' ? "Proyectos" : "Projects"}</h2>
+        <h2 className="text-4xl text-white font-bold mb-8">
+          {language === "es" ? "Proyectos" : "Projects"}
+        </h2>
         <p className="text-gray-400 text-lg mb-12">
           {language === "es"
             ? "Aquí hay algunos de mis proyectos recientes que muestran mis habilidades y experiencia en desarrollo web. Cada proyecto representa un desafío único que pude superar con creatividad y atención al detalle. ¡Echa un vistazo y descubre lo que puedo hacer por ti!"
@@ -80,7 +82,9 @@ const ProjectsSection = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-green-400 text-2xl font-bold mb-4">{project.title}</h3>
+                <h3 className="text-green-400 text-2xl font-bold mb-4">
+                  {project.title}
+                </h3>
                 <p className="text-gray-700 text-base">{project.description}</p>
               </div>
             </Link>
