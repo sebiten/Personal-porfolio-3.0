@@ -18,12 +18,12 @@ const projects = [
     image: "/kiosko.webp",
     url: "https://kiosko.up.railway.app/",
   },
-  {
-    title: "Lyriks",
-    description: "Music player with React, Redux, Tailwind CSS and Spotify API",
-    image: "/lyriks.webp",
-    url: "https://lyriks-musicplayer.netlify.app/",
-  },
+  // {
+  //   title: "Lyriks",
+  //   description: "Music player with React, Redux, Tailwind CSS and Spotify API",
+  //   image: "/lyriks.webp",
+  //   url: "https://lyriks-musicplayer.netlify.app/",
+  // },
   {
     title: "AbelardoBlog",
     description: "Blog website with Next js 13, Typescript and Tailwind css",
