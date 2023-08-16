@@ -18,31 +18,31 @@ const projects = [
     image: "/kiosko.webp",
     url: "https://kiosko.up.railway.app/",
   },
-  // {
-  //   title: "Lyriks",
-  //   description: "Music player with React, Redux, Tailwind CSS and Spotify API",
-  //   image: "/lyriks.webp",
-  //   url: "https://lyriks-musicplayer.netlify.app/",
-  // },
+  {
+    title: "Gym Page",
+    description: "Gym page with Next js, Tailwind CSS and Framer motion",
+    image: "/gym.png",
+    url: "https://famous-centaur-3fe604.netlify.app/",
+  },
   {
     title: "AbelardoBlog",
     description: "Blog website with Next js 13, Typescript and Tailwind css",
     image: "/abelardo-website.png",
     url: "https://abelardo.blog/",
   },
-  // {
-  //   title: "Movie App",
-  //   description: "Movie app with Next Js, Tailwind CSS and TMDB API",
-  //   image: "/jp.webp",
-  //   url: "https://earnest-pithivier-e91468.netlify.app",
-  // },
-  // {
-  //   title: "Boost Digitals",
-  //   description:
-  //     "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
-  //   image: "/boost.png",
-  //   url: "https://boostdigitals.netlify.app",
-  // },
+  {
+    title: "CleanSide App",
+    description: "Landing page with Next js, Tailwind CSS and Framer motion",
+    image: "/arnoa.webp",
+    url: "https://voluble-faun-a86bf8.netlify.app/",
+  },
+  {
+    title: "Boost Digitals",
+    description:
+      "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
+    image: "/boost.png",
+    url: "https://boostdigitals.netlify.app",
+  },
 ];
 
 const ProjectsSection = () => {
