@@ -12,13 +12,6 @@ const projects = [
     url: "https://techlines-production.up.railway.app/",
   },
   {
-    title: "Kiosko",
-    description:
-      "Full stack application for a kiosko with a Next js, Prisma backend and MongoDB.",
-    image: "/kiosko.webp",
-    url: "https://kiosko.up.railway.app/",
-  },
-  {
     title: "Gym Page",
     description: "Gym page with Next js, Tailwind CSS and Framer motion",
     image: "/gym.png",
@@ -35,13 +28,6 @@ const projects = [
     description: "Landing page with Next js, Tailwind CSS and Framer motion",
     image: "/arnoa.webp",
     url: "https://voluble-faun-a86bf8.netlify.app/",
-  },
-  {
-    title: "Boost Digitals",
-    description:
-      "Boost digitals solutions website with Next Js, Tailwind css, Framer motion ",
-    image: "/boost.png",
-    url: "https://boostdigitals.netlify.app",
   },
 ];
 
