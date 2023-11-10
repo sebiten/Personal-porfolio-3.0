@@ -4,12 +4,12 @@ const CVDownloadButton = ({ language, toggleLanguage }) => {
   const getDownloadInfo = () => {
     if (language === "es") {
       return {
-        url: "https://drive.google.com/file/d/1dm0LYQ70kT8R8eQ7BpoYQ_lEZEUJCNt2/view?usp=sharing",
+        url: "https://drive.google.com/file/d/12RuZQtY3uKBDovqNxSBZAs8EhDV1AHw5/view?usp=sharing",
         text: "Descargar CV",
       };
     } else {
       return {
-        url: "https://drive.google.com/file/d/1g1qKSumwPeY95AqVfAQYEPLsJV6pyB1P/view?usp=sharing",
+        url: "https://drive.google.com/file/d/12RuZQtY3uKBDovqNxSBZAs8EhDV1AHw5/view?usp=sharing",
         text: "Download CV",
       };
     }
