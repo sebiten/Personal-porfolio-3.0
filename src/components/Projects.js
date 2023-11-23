@@ -6,40 +6,31 @@ import { useTranslate } from "@/hooks/useTranslate";
 const projects = [
   {
     title: "Techlines E-commerce",
-    description:
-      "Un sitio de comercio electrónico MERN es una plataforma en línea para comprar y vender productos. En este caso, aprovecharemos el stack MERN para construir un sitio de comercio electrónico completo, incluyendo un sistema de autenticación de usuarios, pasarela de pagos y un backend para gestionar las operaciones de la tienda.",
     image: "/techlines.webp",
     url: "https://techlines-production.up.railway.app/",
   },
   {
     title: "Gym Page",
-    description: "Una página web para un gimnasio es una plataforma en línea que presenta información sobre el gimnasio, sus servicios, horarios, clases y promociones. Para desarrollarla, utilizaremos Next.js para la eficiencia en el desarrollo, Tailwind CSS para el diseño y Framer Motion para añadir animaciones atractivas.",
     image: "/gym.png",
     url: "https://famous-centaur-3fe604.netlify.app/",
   },
   {
     title: "AbelardoBlog",
-    description: "Un sitio web de blog es una plataforma en línea para publicar y compartir contenido escrito, como artículos, noticias o historias. En este caso, utilizaremos Next.js, un marco de trabajo de React, junto con TypeScript para una gestión de tipos segura y Tailwind CSS para diseñar un sitio web de blog moderno y atractivo.",
     image: "/abelardo-website.png",
     url: "https://abelardo.blog/",
   },
   {
     title: "CleanSide App",
-    description: "Utiliza Next.js para crear una landing page eficiente, Tailwind CSS para un diseño atractivo y Framer Motion para animaciones llamativas. Presenta de manera clara los servicios de tu app de limpieza, utiliza llamadas a la acción y muestra testimonios para convertir a visitantes en clientes potenciales.",
     image: "/arnoa.webp",
     url: "https://voluble-faun-a86bf8.netlify.app/",
   },
   {
     title: "Restaurantes, bares y cafeterías",
-    description:
-      "Una página web para restaurantes y bares es una plataforma en línea que muestra la oferta culinaria y de bebidas del establecimiento. En esta demostración, se utilizarán técnicas de diseño web para presentar de manera atractiva los platos y bebidas, creando un ambiente visualmente apetitoso y tentador.",
     image: "/food.webp",
     url: "https://dancing-sherbet-b9a756.netlify.app",
   },
   {
     title: "Profesionales independientes",
-    description:
-      "Un sitio web para profesionales independientes es una plataforma en línea diseñada para que abogados, escribanos, diseñadores y otros profesionales promocionen sus servicios y se conecten con posibles clientes. El enfoque debe estar en mostrar su experiencia, habilidades y la gama de servicios que ofrecen de manera efectiva..",
     image: "/portfolio.webp",
     url: "https://sebdevspace.me/",
   }
