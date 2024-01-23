@@ -19,21 +19,6 @@ const projects = [
     image: "/abelardo-website.png",
     url: "https://abelardo.blog/",
   },
-  {
-    title: "CleanSide App",
-    image: "/arnoa.webp",
-    url: "https://voluble-faun-a86bf8.netlify.app/",
-  },
-  {
-    title: "Restaurantes, bares y cafeterías",
-    image: "/food.webp",
-    url: "https://dancing-sherbet-b9a756.netlify.app",
-  },
-  {
-    title: "Profesionales independientes",
-    image: "/portfolio.webp",
-    url: "https://sebdevspace.me/",
-  }
 ];
 
 const ProjectsSection = () => {
