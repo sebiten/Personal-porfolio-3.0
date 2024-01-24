@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Techlines E-commerce",
     image: "/techlines.webp",
-    url: "https://techlines-production.up.railway.app/",
+    url: "https://tl-31ir.onrender.com/",
   },
   {
     title: "Gym Page",
