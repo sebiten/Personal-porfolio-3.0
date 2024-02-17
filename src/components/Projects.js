@@ -3,19 +3,26 @@ import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { useTranslate } from "@/hooks/useTranslate";
+import { FaGithub } from "react-icons/fa";
 const projects = [
   {
     title: "Techlines E-commerce",
+    description:
+      "E-commerce desarrollada con MERN, con panel de administración para la gestión de productos. Debido a las limitaciones del hosting gratuito, la aplicación entra en modo de espera al inicio, lo que puede ocasionar un retraso de aproximadamente un minuto. Una vez activada, la carga es rápida y la experiencia de usuario se mantiene fluida.",
     image: "/techlines.webp",
     url: "https://tl-31ir.onrender.com/",
   },
   {
     title: "Gym Page",
+    description:
+      "Pagina web estatica para gimnasios, diseñada para llamar la atencion de los clientes, con excelentes animaciones, hecha con React y Css3",
     image: "/gym.png",
     url: "https://famous-centaur-3fe604.netlify.app/",
   },
   {
     title: "AbelardoBlog",
+    description:
+      "Blog hecho con next js 14 y Supabase, cuenta con las ultimas funcionalidades de Next js 14, como los server actions server components entre otros.",
     image: "/abelardo-website.png",
     url: "https://abelardo.blog/",
   },
@@ -66,6 +73,15 @@ const ProjectsSection = () => {
             </Link>
           ))}
         </div>
+        <Link
+          className="flex mt-10 text-white  items-center justify-center"
+          href="https://github.com/sebiten"
+        >
+          <span className="border font-bold hover:scale-105 flex items-center justify-center gap-2 rounded-xl p-4">
+            Para ver mas proyectos visita mi Github
+          <FaGithub size={25} />
+          </span>
+        </Link>
       </motion.div>
     </section>
   );
