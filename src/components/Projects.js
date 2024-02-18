@@ -13,7 +13,7 @@ const projects = [
     url: "https://tl-31ir.onrender.com/",
   },
   {
-    title: "Gym Page",
+    title: "Gym",
     description:
       "Pagina web estatica para gimnasios, diseñada para llamar la atencion de los clientes, con excelentes animaciones, hecha con React y Css3",
     image: "/gym.png",
