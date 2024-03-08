@@ -9,12 +9,12 @@ export const services = [
   {
     icon: faCode,
     color: "text-green-500",
-    title: "Front-End Development",
-    titleEs: "Desarrollo Front-End",
+    title: "Full Stack Development",
+    titleEs: "Desarrollo Full Stack",
     description:
-      "Development of modern and responsive user interfaces using the latest web technologies such as Next js 13, Tailwindcss, JavaScript and Typescript.",
+      "Development of modern and responsive user interfaces using the latest web technologies such as Next js 14, Supabase, Next Auth, Tailwindcss, JavaScript and Typescript.",
     descriptionEs:
-      "Desarrollo de interfaces de usuario modernas y responsivas utilizando las últimas tecnologías web como Next js 13, Tailwindcss, JavaScript y Typescript.",
+      "Desarrollo de interfaces de usuario modernas y responsivas utilizando las últimas tecnologías web como Next js 14, Supabase, Next Auth, Tailwindcss, JavaScript y Typescript.",
   },
   {
     icon: faMobileAlt,

@@ -1,13 +1,8 @@
-export const images = [
+export const frontEndTech = [
   {
     id: 1,
     src: "/01-tec.webp",
     alt: "React",
-  },
-  {
-    id: 2,
-    src: "/02-tec.webp",
-    alt: "Node.js",
   },
   {
     id: 3,
@@ -35,19 +30,22 @@ export const images = [
     alt: "Typescript",
   },
   {
-    id: 8,
-    src: "/04-tec.webp",
-    alt: "HTML",
+    id: 12,
+    src: "/styled.webp",
+    alt: "styled components",
   },
   {
-    id: 9,
-    src: "/mongodb.webp",
-    alt: "mongodb",
+    id: 13,
+    src: "/vscode.webp",
+    alt: "styled components",
   },
+];
+
+export const backEndTech = [
   {
-    id: 10,
-    src: "/postman.webp",
-    alt: "postman",
+    id: 2,
+    src: "/pngegg.png",
+    alt: "Node.js",
   },
   {
     id: 11,
@@ -55,8 +53,26 @@ export const images = [
     alt: "express.js",
   },
   {
-    id: 12,
-    src: "/styled.webp",
-    alt: "styled components",
+    id: 13,
+    src: "/04-tec.webp",
+    alt: "supabase",
+  },
+  {
+    id: 13,
+    src: "/prisma.svg",
+    alt: "supabase",
+  },
+];
+
+export const databases = [
+  {
+    id: 9,
+    src: "/mongodb.webp",
+    alt: "mongodb",
+  },
+  {
+    id: 14,
+    src: "/04-tec.webp",
+    alt: "supabase",
   },
 ];

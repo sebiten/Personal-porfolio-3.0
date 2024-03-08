@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Techlines E-commerce",
     description:
-      "E-commerce desarrollada con MERN, con panel de administración para la gestión de productos. Debido a las limitaciones del hosting gratuito, la aplicación entra en modo de espera al inicio, lo que puede ocasionar un retraso de aproximadamente un minuto. Una vez activada, la carga es rápida y la experiencia de usuario se mantiene fluida.",
+      "E-commerce desarrollada con MERN stack, con panel de administración para la gestión de productos. Debido a las limitaciones del hosting gratuito, la aplicación entra en modo de espera al inicio, lo que puede ocasionar un retraso de aproximadamente un minuto. Una vez activada, la carga es rápida y la experiencia de usuario se mantiene fluida.",
     image: "/techlines.webp",
     url: "https://tl-31ir.onrender.com/",
   },
