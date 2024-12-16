@@ -15,16 +15,16 @@ const projects = [
   {
     title: "Gym",
     description:
-      "Pagina web estatica para gimnasios, diseñada para llamar la atencion de los clientes, con excelentes animaciones, hecha con React y Css3",
+      "Pagina web estatica para gimnasios, diseñada para llamar la atencion de los clientes, con excelentes animaciones.",
     image: "/gym.png",
     url: "https://famous-centaur-3fe604.netlify.app/",
   },
   {
-    title: "AbelardoBlog",
+    title: "Reservas-app",
     description:
-      "Blog hecho con next js 14 y Supabase, cuenta con las ultimas funcionalidades de Next js 14, como los server actions server components entre otros.",
-    image: "/abelardo-website.png",
-    url: "https://abelardo.blog/",
+      "Aplicacion Full-Stack de reserva de turnos para barberias, consultorios y mas.",
+    image: "/barberapp.webp",
+    url: "https://reservas-full-stack-z2uc.vercel.app/",
   },
 ];
 
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
         >
           <span className="border font-bold hover:scale-105 flex items-center justify-center gap-2 rounded-xl p-4">
             Para ver mas proyectos visita mi Github
-          <FaGithub size={25} />
+            <FaGithub size={25} />
           </span>
         </Link>
       </motion.div>
