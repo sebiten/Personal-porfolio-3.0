@@ -31,7 +31,7 @@ const projects = [
 const ProjectsSection = () => {
   const { language } = useTranslate();
   return (
-    <section className="max-w-7xl mx-auto bg-gray-800 pb-20 shadow-xl">
+    <section className="max-w-7xl mx-auto bg-gray-800 pb-20 ">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1.3 }}
@@ -55,7 +55,7 @@ const ProjectsSection = () => {
               target={"_blank"}
               href={project.url}
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-600 hover:grayscale-0 grayscale transform hover:scale-105  "
+              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-600 transform   "
             >
               <Image
                 width={500}
