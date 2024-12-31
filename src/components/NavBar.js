@@ -100,15 +100,6 @@ function Navbar() {
                 </Link>
               </li>
             </motion.ul>
-            <div className="flex items-center justify-center  hover:text-gray-800 px-3  rounded-md ">
-            <Link
-                  href="https://abelardo.blog/"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium scroll-smooth"
-                  target="blank"
-                >
-                  {language === "es" ? "Blog" : "Blog"}
-                </Link>
-            </div>
             <div>
               <button
                 className={`text-white font-bold py-1 px-2 rounded-md transition ease-in-out duration-300 ${
