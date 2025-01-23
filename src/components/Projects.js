@@ -15,14 +15,14 @@ const projects = [
   {
     title: "Gym",
     description:
-      "Pagina web estatica para gimnasios, diseñada para llamar la atencion de los clientes, con excelentes animaciones.",
+      "Página web estática diseñada específicamente para gimnasios, enfocada en captar la atención de los clientes mediante atractivas animaciones y un diseño visual impactante.",
     image: "/gym.png",
     url: "https://famous-centaur-3fe604.netlify.app/",
   },
   {
     title: "Reservas-app",
     description:
-      "Aplicacion Full-Stack de reserva de turnos para barberias, consultorios y mas.",
+   "Aplicación Full-Stack para la gestión de reservas en barberías, consultorios y otros servicios. Incluye generación dinámica de PDF y envío automatizado de correos electrónicos tanto al cliente como al profesional (barbero, médico, entre otros).",
     image: "/reserva.png",
     url: "https://reservas-full-stack.vercel.app/",
   },
