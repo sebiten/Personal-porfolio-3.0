@@ -23,8 +23,8 @@ const projects = [
     title: "Reservas-app",
     description:
       "Aplicacion Full-Stack de reserva de turnos para barberias, consultorios y mas.",
-    image: "/barberapp.webp",
-    url: "https://reservas-full-stack-z2uc.vercel.app/",
+    image: "/reserva.png",
+    url: "https://reservas-full-stack.vercel.app/",
   },
 ];
 
