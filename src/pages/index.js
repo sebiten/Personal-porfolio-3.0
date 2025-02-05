@@ -33,7 +33,6 @@ export default function Home() {
         <AboutMe />
         <ExperienceCard />
         <ProjectsSection />
-        <Services />
         <Technologies />
         <Contact />
         <Footer />

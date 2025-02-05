@@ -10,13 +10,13 @@ const ExperienceSection = () => {
       title: "LumiPeople",
       description: (
         <>
-          <p className="text-primary font-semibold text-sm">
+          <p className="text-gray-200 font-normal text-sm">
             Desarrollé una web empresarial informativa y funcional para una
             empresa, integrando un sistema de búsqueda de empleo y un blog
             optimizado con técnicas avanzadas de SEO, mejorando la conversión y
             visibilidad en motores de búsqueda.
           </p>
-          <ul className="list-disc list-inside mt-4 text-primary text-start text-sm ">
+          <ul className="list-disc list-inside mt-4 text-gray-200 text-start text-sm ">
             <li>
               Implementación de Google Analytics y Google Tag Manager para el
               análisis y seguimiento del rendimiento y comportamiento de los
@@ -51,13 +51,13 @@ const ExperienceSection = () => {
       title: "IDeas App Inmobiliaria",
       description: (
         <>
-          <p className="text-primary font-semibold text-sm">
+          <p className="text-gray-200 font-normal text-sm">
             Entorno de aprendizaje profesional donde, en colaboración con un
             equipo, desarrollamos una aplicación inmobiliaria full-stack,
             aplicando metodologías ágiles con sprints iterativos y participando
             en reuniones de planificación estratégica.
           </p>
-          <ul className="list-disc list-inside mt-4 text-primary text-start text-sm ">
+          <ul className="list-disc list-inside mt-4 text-gray-200 text-start text-sm  ">
             <li>
               Diseño de estilos visuales atractivos y funcionales, utilizando
               Tailwind CSS para garantizar una UI limpia y profesional.
@@ -91,45 +91,48 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto  pb-20 my-6 px-6">
+    <section className="max-w-7xl mx-auto pb-20 my-6 px-6  rounded-lg  mb-16">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1.3 }}
-        whileInView={{ opacity: 1.5 }}
+        whileInView={{ opacity: 1 }}
         className="container mx-auto"
       >
-        <h2 className="text-4xl  font-bold mb-8 text-white">
-          Experiencia Profesional
+        <h2 className="text-4xl font-bold mb-8 text-white text-start">
+          Experiencia
         </h2>
-        <p className="text-muted-foreground text-lg mb-12">
+        <p className="text-gray-300 text-lg text-start mb-12">
           Explora las experiencias más relevantes en mi trayectoria en
           desarrollo web y programación full-stack.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((experience, index) => (
-            <Card key={index} className="transition-transform transform ">
-              <CardContent className="p-6 flex flex-col items-center text-center">
-                <Image
-                  src={experience.logo}
-                  alt={experience.title}
-                  width={200}
-                  height={120}
-                  className="mb-4 object-cover h-28 w-auto"
-                />
-                <h3 className="text-xl text-primary font-semibold mb-2">
+            <Card
+              key={index}
+              className="bg-gray-700 border border-gray-600 p-6 rounded-lg transition-transform transform  hover:shadow-lg"
+            >
+              <Image
+                src={experience.logo}
+                alt={experience.title}
+                width={200}
+                height={120}
+                className="mb-4 object-cover h-28 w-auto mx-auto"
+              />
+              <CardContent className="flex flex-col items-center text-center h-full text-gray-200">
+                <h3 className="text-xl text-white font-semibold mb-2">
                   {experience.title}
                 </h3>
                 <p className="text-green-400 text-lg font-semibold mb-2">
                   {experience.date}
                 </p>
-                <div className="text-primary text-base mb-4">
+                <div className="text-gray-200 text-base mb-4">
                   {experience.description}
                 </div>
                 <Link
                   href={experience.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline text-sm"
+                  className="text-blue-400 hover:underline text-sm"
                 >
                   {experience.url.replace("https://", "")}
                 </Link>

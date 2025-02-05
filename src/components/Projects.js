@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useTranslate } from "@/hooks/useTranslate";
 import { FaGithub } from "react-icons/fa";
+import { Button } from "./ui/button";
 const projects = [
   {
     title: "Techlines E-commerce",
@@ -22,7 +23,7 @@ const projects = [
   {
     title: "Reservas-app",
     description:
-   "Aplicación Full-Stack para la gestión de reservas en barberías, consultorios y otros servicios. Incluye generación dinámica de PDF y envío automatizado de correos electrónicos tanto al cliente como al profesional (barbero, médico, entre otros).",
+      "Aplicación Full-Stack para la gestión de reservas en barberías, consultorios y otros servicios. Incluye generación dinámica de PDF y envío automatizado de correos electrónicos tanto al cliente como al profesional (barbero, médico, entre otros).",
     image: "/reserva.png",
     url: "https://reservas-full-stack.vercel.app/",
   },
@@ -55,7 +56,7 @@ const ProjectsSection = () => {
               target={"_blank"}
               href={project.url}
               key={index}
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-600 transform   "
+              className="bg-gray-700 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-600 transform   "
             >
               <Image
                 width={500}
@@ -65,23 +66,25 @@ const ProjectsSection = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-6">
-                <h3 className="text-green-400 text-2xl font-bold mb-4">
+                <h3 className="text-green-300 text-2xl font-bold mb-4">
                   {project.title}
                 </h3>
-                <p className="text-gray-700 text-base">{project.description}</p>
+                <p className="text-gray-200 text-base">{project.description}</p>
               </div>
             </Link>
           ))}
         </div>
-        <Link
-          className="flex mt-10 text-white  items-center justify-center"
-          href="https://github.com/sebiten"
-        >
-          <span className="border font-bold hover:scale-105 flex items-center justify-center gap-2 rounded-xl p-4">
+        <Button variant={"deafult"} className="bg-green-200 text-gray-700 hover:bg-gray-300
+
+        flex items-center justify-center mt-8 mx-auto py-6 px-6 rounded-lg gap-2">
+          <FaGithub size={25} />
+          <Link
+            className="flex   gap-2   items-center justify-center"
+            href="https://github.com/sebiten"
+          >
             Para ver mas proyectos visita mi Github
-            <FaGithub size={25} />
-          </span>
-        </Link>
+          </Link>
+        </Button>
       </motion.div>
     </section>
   );

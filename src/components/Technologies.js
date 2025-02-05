@@ -26,7 +26,7 @@ function Technologies() {
             ? "Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad."
             : "I use modern and efficient technologies to create high-quality websites and applications."}
         </p>
-        <Card className="shadow-lg border border-green-200/50  rounded-2xl p-10">
+        <Card className="shadow-lg border border-gray-600 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-10">
           {/* Technology Sections */}
           {[
             { title: "Front-end", data: frontEndTech },
@@ -34,14 +34,15 @@ function Technologies() {
             { title: "Databases", data: databases },
           ].map((section, index) => (
             <div key={index} className="mb-8">
-              <h3 className="text-2xl font-semibold text-primary mb-4 border-b  pb-2">
+              <h3 className="text-2xl font-semibold text-white  mb-4 border-b  pb-2">
                 {section.title}
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
                 {section.data.map((image) => (
                   <Badge
                     key={image.alt}
-                    className="flex items-center bg-inherit gap-3 p-3 border border-gray-500 rounded-lg "
+                    className="flex items-center bg-inherit gap-3 p-3 border
+bg-gray-700 border-gray-500 rounded-lg "
                   >
                     <Image
                       width={30}
@@ -50,7 +51,7 @@ function Technologies() {
                       alt={image.alt}
                       className="object-contain"
                     />
-                    <span className="text-sm font-bold text-gray-600 ml-2">
+                    <span className="text-sm font-bold text-gray-200 ml-2">
                       {image.alt}
                     </span>
                   </Badge>

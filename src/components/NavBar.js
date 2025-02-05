@@ -68,16 +68,13 @@ function Navbar() {
                 )}
               </svg>
             </button>
-            <motion.ul
-              initial={{ opacity: 0 }} // initial state
-              animate={{ opacity: 1 }} // final state
-              transition={{ duration: 1 }} // transition duration
-              className={`${menuClasses} text-center md:flex text-lg uppercase  mt-2 md:mt-0`}
+            <ul
+              className={`${menuClasses} text-center md:flex text-lg uppercase gap-2  mt-2 md:mt-0`}
             >
               <li>
                 <Link
                   href="/"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800  px-3  rounded-md text-sm font-medium scroll-smooth"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800  px-4 py-2   rounded-md text-sm font-medium"
                 >
                   {language === "es" ? "Inicio" : "Home"}
                 </Link>
@@ -85,7 +82,7 @@ function Navbar() {
               <li>
                 <Link
                   href="#about"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3 rounded-md text-sm font-medium scroll-smooth"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-4 py-2 rounded-md text-sm font-medium "
                 >
                   {language === "es" ? "Sobre mi" : "About me"}
                 </Link>
@@ -94,15 +91,15 @@ function Navbar() {
               <li>
                 <Link
                   href="#contact"
-                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-3  rounded-md text-sm font-medium scroll-smooth"
+                  className="block text-white hover:bg-gray-300 hover:text-gray-800 px-4 py-2  rounded-md text-sm font-medium "
                 >
                   {language === "es" ? "Contacto" : "Contact"}
                 </Link>
               </li>
-            </motion.ul>
+            </ul>
             <div>
               <button
-                className={`text-white font-bold py-1 px-2 rounded-md transition ease-in-out duration-300 ${
+                className={`text-white font-bold py-2 ml-2 px-2 rounded-md transition ease-in-out duration-300 ${
                   language === "es" ? "bg-green-300" : "bg-gray-800"
                 } w-full sm:w-auto border border-transparent hover:border-white`}
                 onClick={toggleLanguage}
