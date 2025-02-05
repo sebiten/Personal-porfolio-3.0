@@ -11,10 +11,10 @@ const ExperienceSection = () => {
       description: (
         <>
           <p className="text-gray-200 font-normal text-sm">
-            Desarrollé una web empresarial informativa y funcional para una
-            empresa, integrando un sistema de búsqueda de empleo y un blog
-            optimizado con técnicas avanzadas de SEO, mejorando la conversión y
-            visibilidad en motores de búsqueda.
+            Desarrollo y diseño de una web empresarial informativa y funcional
+            para una empresa, integrando un sistema de búsqueda de empleo y un
+            blog optimizado con técnicas avanzadas de SEO, mejorando la
+            conversión y visibilidad en motores de búsqueda.
           </p>
           <ul className="list-disc list-inside mt-4 text-gray-200 text-start text-sm ">
             <li>
