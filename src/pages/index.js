@@ -24,7 +24,7 @@ export default function Home() {
         />
         <meta name="author" content="Sebastian Burgos" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <link rel="icon" href="/logo.svg" />
       </Head>
       <main>

@@ -1,100 +1,140 @@
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: 'LumiPeopleARG',
+      title: "LumiPeople",
       description: (
         <>
-          Desde junio, he trabajado en el desarrollo, mantenimiento y optimización de la página web de LumiPeopleARG.
-          Entre las tareas más destacadas se incluyen:
-          <ul className="list-disc list-inside mt-2 text-gray-700">
-            <li>Diseño y desarrollo de componentes web con React y Tailwind CSS.</li>
-            <li>Implementación de campañas de Google Ads para aumentar la visibilidad online.</li>
-            <li>Optimización SEO para mejorar el posicionamiento orgánico en motores de búsqueda.</li>
-            <li>Creación y mantenimiento de un blog con contenido atractivo y relevante.</li>
-            <li>Mejoras en la velocidad de carga de la página mediante estrategias de optimización.</li>
-            <li>Colaboración en estrategias de marketing digital junto al equipo de la empresa.</li>
+          <p className="text-primary font-semibold text-sm">
+            Desarrollé una web empresarial informativa y funcional para una
+            empresa, integrando un sistema de búsqueda de empleo y un blog
+            optimizado con técnicas avanzadas de SEO, mejorando la conversión y
+            visibilidad en motores de búsqueda.
+          </p>
+          <ul className="list-disc list-inside mt-4 text-primary text-start text-sm ">
+            <li>
+              Implementación de Google Analytics y Google Tag Manager para el
+              análisis y seguimiento del rendimiento y comportamiento de los
+              usuarios.
+            </li>
+            <li>
+              Creación y gestión de un blog corporativo con contenido optimizado
+              para SEO, utilizando estrategias de link building y keywords
+              relevantes.
+            </li>
+            <li>
+              Optimización de velocidad de carga mediante estrategias avanzadas
+              de rendimiento como lazy loading y minificación de archivos.
+            </li>
+            <li>
+              Colaboración en estrategias de marketing digital incluyendo
+              campañas de Google Ads y redes sociales para mejorar el alcance y
+              adquisición de usuarios.
+            </li>
+            <li>
+              Desarrollo de un sistema de carga y postulación de empleos con
+              busquedas para cada puesto.
+            </li>
           </ul>
         </>
       ),
-      logo: '/lumi.png',
-      date: 'Junio 2024 - Actualidad',
-      url: 'https://www.lumipeoplearg.com',
+      logo: "/lumi.png",
+      date: "Junio 2024 - Actualidad",
+      url: "https://www.lumipeoplearg.com",
     },
     {
-      title: 'Pasantía Inmobiliaria Full-Stack',
+      title: "IDeas App Inmobiliaria",
       description: (
         <>
-          Pasantía de 6 meses desarrollando ideas para una aplicación inmobiliaria full-stack.
-          Entre las responsabilidades asumidas durante este período se encuentran:
-          <ul className="list-disc list-inside mt-2 text-gray-700">
-            <li>Diseño de prototipos funcionales para la plataforma web.</li>
-            <li>Desarrollo de la lógica del backend con Node.js y bases de datos en MongoDB.</li>
-            <li>Implementación de la interfaz de usuario con React y Tailwind CSS.</li>
-            <li>Trabajo en equipo utilizando metodología ágil basada en sprints.</li>
-            <li>Colaboración en reuniones de planificación y seguimiento de tareas.</li>
-            <li>Pruebas y depuración para garantizar un producto funcional y escalable.</li>
+          <p className="text-primary font-semibold text-sm">
+            Entorno de aprendizaje profesional donde, en colaboración con un
+            equipo, desarrollamos una aplicación inmobiliaria full-stack,
+            aplicando metodologías ágiles con sprints iterativos y participando
+            en reuniones de planificación estratégica.
+          </p>
+          <ul className="list-disc list-inside mt-4 text-primary text-start text-sm ">
+            <li>
+              Diseño de estilos visuales atractivos y funcionales, utilizando
+              Tailwind CSS para garantizar una UI limpia y profesional.
+            </li>
+            <li>
+              Implementación de diseño responsive para compatibilidad en
+              múltiples dispositivos, asegurando una experiencia de usuario
+              óptima.
+            </li>
+            <li>
+              Integración de mapas interactivos con Leaflet y OpenStreetMap para
+              visualizar propiedades en tiempo real.
+            </li>
+            <li>
+              Desarrollo de funcionalidades avanzadas como paginación dinámica,
+              filtrado avanzado y consumo de APIs de terceros para enriquecer
+              los datos de las propiedades.
+            </li>
+            <li>
+              Trabajo en equipo con metodologías ágiles como Scrum, participando
+              activamente en reuniones de planificación, code reviews y
+              documentación técnica.
+            </li>
           </ul>
         </>
       ),
-      logo: '/ideas.png',
-      date: 'Enero 2024 - Junio 2024 - https://www.lumipeoplearg.com/ ',
-      url: 'https://github.com/tahouse-casa', // Cambia esto por el enlace adecuado, si aplica
+      logo: "/ideas.png",
+      date: "Noviembre 2022 - Marzo 2023",
+      url: "https://github.com/tahouse-casa",
     },
   ];
 
   return (
-    <section className="max-w-7xl mx-auto bg-gray-800 pb-20 my-6">
+    <section className="max-w-7xl mx-auto  pb-20 my-6 px-6">
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1.3 }}
         whileInView={{ opacity: 1.5 }}
-        className="container mx-auto px-4"
+        className="container mx-auto"
       >
-        {/* Título de la sección */}
-        <h2 className="text-4xl text-white font-bold mb-8">Experiencia</h2>
-        <p className="text-gray-400 text-lg mb-12">
-          Aquí puedes explorar las experiencias más destacadas que han contribuido a mi crecimiento profesional en desarrollo web y programación full-stack.
+        <h2 className="text-4xl  font-bold mb-8 text-white">
+          Experiencia Profesional
+        </h2>
+        <p className="text-muted-foreground text-lg mb-12">
+          Explora las experiencias más relevantes en mi trayectoria en
+          desarrollo web y programación full-stack.
         </p>
-        {/* Lista de experiencias */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {experiences.map((experience, index) => (
-            <a
-              href={experience.url}
-              key={index}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl"
-            >
-              {/* Imagen del logo */}
-              <Image
-                src={experience.logo}
-                alt={experience.title}
-                width={300}
-                height={300}
-                className="w-80 h-80 object-fill mx-auto"
-              />
-              {/* Detalles de la experiencia */}
-              <div className="p-6">
-                <h3 className="text-green-400 text-2xl font-bold mb-2">
+            <Card key={index} className="transition-transform transform ">
+              <CardContent className="p-6 flex flex-col items-center text-center">
+                <Image
+                  src={experience.logo}
+                  alt={experience.title}
+                  width={200}
+                  height={120}
+                  className="mb-4 object-cover h-28 w-auto"
+                />
+                <h3 className="text-xl text-primary font-semibold mb-2">
                   {experience.title}
                 </h3>
-                <p className="text-gray-500 text-sm mb-2">{experience.date}</p>
-                <div className="text-gray-700 text-base mb-4">{experience.description}</div>
-                {/* Enlace visible al dominio */}
-                <a
+                <p className="text-green-400 text-lg font-semibold mb-2">
+                  {experience.date}
+                </p>
+                <div className="text-primary text-base mb-4">
+                  {experience.description}
+                </div>
+                <Link
                   href={experience.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:text-blue-700 text-sm"
+                  className="text-blue-500 hover:underline text-sm"
                 >
-                  {experience.url.replace('https://', '')}
-                </a>
-              </div>
-            </a>
+                  {experience.url.replace("https://", "")}
+                </Link>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </motion.div>

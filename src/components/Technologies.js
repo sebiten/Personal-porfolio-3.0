@@ -3,102 +3,64 @@ import React from "react";
 import { motion } from "framer-motion";
 import { frontEndTech, backEndTech, databases } from "../data/TechImg";
 import { useTranslate } from "@/hooks/useTranslate";
+import { Badge } from "@/components/ui/badge";
+import { Card } from "./ui/card";
 
 function Technologies() {
   const { language } = useTranslate();
 
   return (
-    <div>
+    <section className="max-w-7xl mx-auto py-16 px-8 grid items-center justify-center ">
       <motion.div
-        initial={{ opacity: 0 }}
-        transition={{ duration: 1.3 }}
-        whileInView={{ opacity: 1.5 }}
-        className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
       >
-        <div className="max-w-7xl mx-auto p-4">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
-            {language === "es"
-              ? "Tecnologias y herramientas"
-              : " Technologies & Tools"}
-          </h2>
-          <p className="mt-3 text-lg leading-6 text-gray-300 mb-10">
-            {language === "es"
-              ? "Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad y profesionales. Estoy constantemente aprendiendo y manteniéndome actualizado con las últimas herramientas y técnicas para ofrecer las mejores soluciones a mis clientes. A continuación se presentan algunas de las tecnologías y herramientas que utilizo"
-              : "I use modern and efficient technologies to create high-quality and professional websites and applications. I am constantly learning and staying up-to-date with the latest tools and techniques to provide the best solutions for my clients. Here are some of the technologies and tools I use:"}
-          </p>
-
-          <div className="col-span-12 md:col-span-12 xl:col-span-4">
-            {/* Front-end Tech */}
-
-            <h3 className="text-2xl font-semibold text-green-300 mt-9 mb-2">
-              Front-end Technologies
-            </h3>
-            <div className="grid grid-cols-2 gap-4">
-              {frontEndTech.map((image) => (
-                <div
-                  key={image.id}
-                  className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
-                >
-                  <Image
-                    width={100}
-                    height={100}
-                    className="max-h-24"
-                    src={image.src}
-                    alt={image.alt}
-                  />
-                </div>
-              ))}
-            </div>
-
-            {/* Back-end Tech */}
-            <div className="col-span-12 md:col-span-6 xl:col-span-4">
-              <h3 className="text-2xl font-semibold text-green-300 mt-9 mb-2 ">
-                Back-end Technologies
+        <h2 className="text-4xl font-extrabold text-white mb-6 text-start">
+          {language === "es"
+            ? "Tecnologías y herramientas"
+            : "Technologies & Tools"}
+        </h2>
+        <p className="text-lg text-gray-400 text-start mb-8">
+          {language === "es"
+            ? "Utilizo tecnologías modernas y eficientes para crear sitios web y aplicaciones de alta calidad."
+            : "I use modern and efficient technologies to create high-quality websites and applications."}
+        </p>
+        <Card className="shadow-lg border border-green-200/50  rounded-2xl p-10">
+          {/* Technology Sections */}
+          {[
+            { title: "Front-end", data: frontEndTech },
+            { title: "Back-end", data: backEndTech },
+            { title: "Databases", data: databases },
+          ].map((section, index) => (
+            <div key={index} className="mb-8">
+              <h3 className="text-2xl font-semibold text-primary mb-4 border-b  pb-2">
+                {section.title}
               </h3>
-              <div className="grid grid-cols-2 gap-4">
-                {backEndTech.map((image) => (
-                  <div
-                    key={image.id}
-                    className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+                {section.data.map((image) => (
+                  <Badge
+                    key={image.alt}
+                    className="flex items-center bg-inherit gap-3 p-3 border border-gray-500 rounded-lg "
                   >
                     <Image
-                      width={100}
-                      height={100}
-                      className="max-h-24"
+                      width={30}
+                      height={30}
                       src={image.src}
                       alt={image.alt}
+                      className="object-contain"
                     />
-                  </div>
+                    <span className="text-sm font-bold text-gray-600 ml-2">
+                      {image.alt}
+                    </span>
+                  </Badge>
                 ))}
               </div>
             </div>
-
-            {/* Databases */}
-            <div className="col-span-12 md:col-span-6 xl:col-span-4">
-              <h3 className="text-2xl font-semibold text-green-300 mt-9 mb-2">
-                Databases
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                {databases.map((image) => (
-                  <div
-                    key={image.id}
-                    className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md"
-                  >
-                    <Image
-                      width={100}
-                      height={100}
-                      className="max-h-24"
-                      src={image.src}
-                      alt={image.alt}
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
+          ))}
+        </Card>
       </motion.div>
-    </div>
+    </section>
   );
 }
 

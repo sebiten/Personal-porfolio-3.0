@@ -2,17 +2,17 @@ export const frontEndTech = [
   {
     id: 1,
     src: "/01-tec.webp",
-    alt: "React",
+    alt: "HTML",
   },
   {
     id: 3,
     src: "/03-tec.webp",
-    alt: "Tailwind CSS",
+    alt: "JavaScript",
   },
   {
     id: 4,
     src: "/05-tec.webp",
-    alt: "JavaScript",
+    alt: "React",
   },
   {
     id: 5,
@@ -32,12 +32,12 @@ export const frontEndTech = [
   {
     id: 12,
     src: "/styled.webp",
-    alt: "styled components",
+    alt: "Styled components",
   },
   {
     id: 13,
     src: "/vscode.webp",
-    alt: "styled components",
+    alt: "VS Code",
   },
 ];
 
@@ -50,17 +50,12 @@ export const backEndTech = [
   {
     id: 11,
     src: "/expressjs.png",
-    alt: "express.js",
+    alt: "Express.js",
   },
   {
     id: 13,
-    src: "/04-tec.webp",
-    alt: "supabase",
-  },
-  {
-    id: 13,
-    src: "/prisma.svg",
-    alt: "supabase",
+    src: "/prismalogo.png",
+    alt: "Prisma",
   },
 ];
 
@@ -68,11 +63,11 @@ export const databases = [
   {
     id: 9,
     src: "/mongodb.webp",
-    alt: "mongodb",
+    alt: "Mongodb",
   },
   {
     id: 14,
     src: "/04-tec.webp",
-    alt: "supabase",
+    alt: "Supabase",
   },
 ];
