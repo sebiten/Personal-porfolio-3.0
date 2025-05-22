@@ -1,10 +1,62 @@
 "use client"
 import Image from "next/image"
 import { motion } from "framer-motion"
-import { frontEndTech, backEndTech, databases } from "../data/TechImg"
-import { useTranslate } from "@/hooks/useTranslate"
 import { Badge } from "@/components/ui/badge"
 import { Card } from "./ui/card"
+import { useTranslate } from "@/hooks/useTranslate"
+
+export const technologies = [
+  {
+    id: 1,
+    src: "/01-tec.webp",
+    alt: "HTML",
+  },
+  {
+    id: 3,
+    src: "/03-tec.webp",
+    alt: "JavaScript",
+  },
+  {
+    id: 4,
+    src: "/05-tec.webp",
+    alt: "React",
+  },
+  {
+    id: 5,
+    src: "/next.svg",
+    alt: "Nextjs",
+  },
+  {
+    id: 6,
+    src: "/tailwind.webp",
+    alt: "Tailwind",
+  },
+  {
+    id: 7,
+    src: "/ts.png",
+    alt: "Typescript",
+  },
+  {
+    id: 13,
+    src: "/vscode.webp",
+    alt: "VS Code",
+  },
+  {
+    id: 2,
+    src: "/pngegg.png",
+    alt: "Node.js",
+  },
+  {
+    id: 11,
+    src: "/expressjs.png",
+    alt: "Express.js",
+  },
+  {
+    id: 14,
+    src: "/04-tec.webp",
+    alt: "Supabase DB",
+  },
+]
 
 function Technologies() {
   const { language } = useTranslate()
@@ -29,20 +81,8 @@ function Technologies() {
     },
   }
 
-  const sectionVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (i) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: i * 0.2,
-        duration: 0.5,
-      },
-    }),
-  }
-
   return (
-    <section className="bg-gray-800 min-h-screen w-full py-16 relative overflow-hidden">
+    <section className="bg-gray-800 w-full py-16 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -81,43 +121,24 @@ function Technologies() {
               </svg>
             </div>
 
-            {/* Technology Sections */}
-            {[
-              { title: "Front-end", data: frontEndTech, icon: "🎨" },
-              { title: "Back-end", data: backEndTech, icon: "⚙️" },
-              { title: "Databases", data: databases, icon: "🗄️" },
-            ].map((section, index) => (
-              <motion.div
-                key={index}
-                custom={index}
-                variants={sectionVariants}
-                initial="hidden"
-                animate="visible"
-                className="mb-10 last:mb-0"
-              >
-                <h3 className="text-2xl font-bold text-white mb-6 border-b border-gray-600 pb-3 flex items-center">
-                  <span className="mr-2">{section.icon}</span>
-                  {section.title}
-                </h3>
-                <motion.div
-                  variants={containerVariants}
-                  className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
-                >
-                  {section.data.map((tech, techIndex) => (
-                    <motion.div key={tech.alt} variants={itemVariants}>
-                      <Badge className="flex items-center justify-start w-full h-full gap-3 p-4 bg-gray-700 hover:bg-gray-600 border-gray-600 rounded-lg transition-all duration-300  hover:scale-105 group">
-                        <div className="relative w-8 h-8 flex-shrink-0">
-                          <Image fill src={tech.src || "/placeholder.svg"} alt={tech.alt} className="object-contain" />
-                        </div>
-                        <span className="text-sm font-medium text-gray-300 group-hover:text-green-300 transition-colors">
-                          {tech.alt}
-                        </span>
-                      </Badge>
-                    </motion.div>
-                  ))}
+            {/* Technology Grid */}
+            <motion.div
+              variants={containerVariants}
+              className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+            >
+              {technologies.map((tech) => (
+                <motion.div key={tech.id} variants={itemVariants}>
+                  <Badge className="flex items-center justify-start w-full h-full gap-3 p-4 bg-gray-700 hover:bg-gray-600 border-gray-600 rounded-lg transition-all duration-300 hover:scale-105 group">
+                    <div className="relative w-8 h-8 flex-shrink-0">
+                      <Image fill src={tech.src || "/placeholder.svg"} alt={tech.alt} className="object-contain" />
+                    </div>
+                    <span className="text-sm font-medium text-gray-300 group-hover:text-green-300 transition-colors">
+                      {tech.alt}
+                    </span>
+                  </Badge>
                 </motion.div>
-              </motion.div>
-            ))}
+              ))}
+            </motion.div>
           </Card>
         </motion.div>
       </div>

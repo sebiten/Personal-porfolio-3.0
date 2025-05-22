@@ -29,19 +29,12 @@ export const frontEndTech = [
     src: "/ts.png",
     alt: "Typescript",
   },
-  {
-    id: 12,
-    src: "/styled.webp",
-    alt: "Styled components",
-  },
+
   {
     id: 13,
     src: "/vscode.webp",
     alt: "VS Code",
   },
-];
-
-export const backEndTech = [
   {
     id: 2,
     src: "/pngegg.png",
@@ -52,19 +45,7 @@ export const backEndTech = [
     src: "/expressjs.png",
     alt: "Express.js",
   },
-  {
-    id: 13,
-    src: "/prismalogo.png",
-    alt: "Prisma",
-  },
-];
 
-export const databases = [
-  {
-    id: 9,
-    src: "/mongodb.webp",
-    alt: "Mongodb",
-  },
   {
     id: 14,
     src: "/04-tec.webp",

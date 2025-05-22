@@ -46,7 +46,7 @@ function Contact() {
           whileInView={{ opacity: 1.5 }}
           className="max-w-7xl mx-auto sm:px-10 "
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-100 my-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-100 my-4">
             {language === "es" ? "Contacto" : "Get in touch"}
           </h2>
 
