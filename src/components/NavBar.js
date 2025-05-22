@@ -100,7 +100,7 @@ function Navbar() {
             <div>
               <button
                 className={`text-white font-bold py-2 ml-2 px-2 rounded-md transition ease-in-out duration-300 ${
-                  language === "es" ? "bg-green-300" : "bg-gray-800"
+                  language === "es" ? "bg-green-500" : "bg-gray-800"
                 } w-full sm:w-auto border border-transparent hover:border-white`}
                 onClick={toggleLanguage}
               >

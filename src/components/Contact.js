@@ -37,14 +37,14 @@ function Contact() {
   return (
     <>
       <section
-        className="bg-gray-800 py-12 px-4 sm:px-6 lg:py-16 lg:px-8 scroll-smooth rounded-2xl"
+        className=" py-12 px-4 sm:px-6 lg:py-16 lg:px-8 scroll-smooth rounded-2xl"
         id="contact"
       >
         <motion.div
           initial={{ opacity: 0 }}
           transition={{ duration: 1.3 }}
           whileInView={{ opacity: 1.5 }}
-          className="max-w-7xl mx-auto sm:px-10"
+          className="max-w-7xl mx-auto sm:px-10 "
         >
           <h2 className="text-3xl md:text-5xl font-bold text-gray-100 my-4">
             {language === "es" ? "Contacto" : "Get in touch"}
@@ -69,7 +69,7 @@ function Contact() {
               </div>
             </div>
 
-            <form className="bg-gray-700 text-white rounded-lg shadow-xl p-10 flex flex-col justify-center">
+            <form className="shadow-xl border-0 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl md:p-10 relative overflow-hidden text-white  p-10 flex flex-col justify-center">
               <h3 className="font-bold text-center text-3xl">
                 {language === "es"
                   ? "Informacion de contacto"
@@ -77,7 +77,7 @@ function Contact() {
               </h3>
               <Button
                 onClick={handleInfo}
-                className="bg-green-200 font-bold hover:bg-gray-300  text-gray-800 rounded-lg p-2 my-4"
+                className="bg-green-500 font-bold hover:bg-gray-300  text-gray-800 rounded-lg p-2 my-4"
               >
                 {show ? "Hide" : "Show information"}
               </Button>
@@ -93,18 +93,15 @@ function Contact() {
                     {show ? info.email : "**********"}
                   </Link>
                 </p>
-                <p>
-                  <span className="font-bold">Adress: </span>{" "}
-                  {show ? info.direction : "**********"}
-                </p>
+        
 
-                <Button className="bg-green-200 hover:bg-gray-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
+                <Button className="bg-green-500 hover:bg-gray-300 hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out mt-8 flex items-center justify-center">
                   <FaMailBulk className="mr-2" color="#25D366" size={25} />
                   <Link href="mailto:sebdevspace@gmail.com">
                     Contact me by email
                   </Link>
                 </Button>
-                <Button className="bg-green-200 hover:bg-gray-300  hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center justify-center">
+                <Button className="bg-green-500 hover:bg-gray-300  hover:transform  text-gray-800 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out flex items-center justify-center">
                   <FaWhatsapp className="mr-2" color="#25D366" size={25} />
                   <Link href="https://wa.me/+543886575936">
                     Contact me by Whatsapp
