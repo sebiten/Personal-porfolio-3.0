@@ -12,10 +12,10 @@ export const projectss = [
     },
     description: {
       es: "Plataforma e-commerce con gestión integral de productos y pedidos. Incluye panel administrativo para añadir, editar y eliminar productos, filtros avanzados por precio y categoría, y sistema de pedidos offline con integración a WhatsApp. El panel de pedidos muestra detalles completos: productos, variantes, precios unitarios y totales.",
-      en: "E-commerce platform with comprehensive product and order management. Includes an administrative panel to add, edit and delete products, advanced filters by price and category, and offline ordering system with WhatsApp integration. The order panel shows complete details: products, variants, unit prices and totals.",
+      en: "E-commerce platform featuring full product and order management. Includes an admin panel to create, edit, and delete products, advanced filtering by price and category, and an offline ordering system integrated with WhatsApp. The order dashboard displays complete details including products, variants, unit prices, and totals. Integrated with Mercado Pago for checkout and secure payments",
     },
     image: "/almaluciahero.png",
-    url: "https://almalucia.vercel.app/",
+    url: "https://almalucia.shop/",
     technologies: [
       "React",
       "Typescript",
